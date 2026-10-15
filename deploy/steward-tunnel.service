@@ -1,0 +1,18 @@
+# Cloudflare named tunnel `steward-mcp`: steward-mcp.example.org -> 127.0.0.1:9520 (LIVE-05).
+# Kill switch: `systemctl --user stop steward-tunnel` (the public URL goes dark;
+# steward-mcp keeps running locally). Config: ~/.cloudflared/steward-mcp.yml,
+# from deploy/cloudflared-steward.yml.example.
+
+[Unit]
+Description=Cloudflare tunnel for the Steward MCP connector
+After=steward-mcp.service
+
+[Service]
+Type=simple
+ExecStart=/home/user/bin/cloudflared tunnel --no-autoupdate --config %h/.cloudflared/steward-mcp.yml run
+Restart=always
+RestartSec=5
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,7 @@
+=== t3_outer_hook_killed 2026-10-04T13:34:22-0700
+$ scenario t3_outer_hook_killed: kill -9 the hook's sh while it waits for Steward
+  permission_request agy-1-7efe49ae seen; killed hook sh pids ['701931']; not answering
+  agy step 2 run_command ERROR {"CommandLine": "touch steward-marker.txt"} JSON hook "jsonhook__steward-gate-f93d1583233a9b7fbde40a628a3f42d7_PreToolUse_0_0" failed: command failed: signal: killed, stderr:
+  agy result status=SUCCESS denied_actions=None response='The command `touch steward-marker.txt` **did not succeed**.\n\nExecution failed prior to running the command due to a pre-tool hook failure:\n\n```\nJSON hook "jsonh'
+  done: {"turn_id": "t1", "status": "completed", "evidence_ref": "agy:b09d8ebc-9069-4049-ad24-182b90e43c95:t1"}
+  marker present: False

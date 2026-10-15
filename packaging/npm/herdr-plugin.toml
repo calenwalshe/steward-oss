@@ -1,0 +1,22 @@
+# Steward as an optional Herdr plugin surface. `steward enable herdr-plugin` links this directory with
+# `herdr plugin link`. The version is stamped from pyproject.toml by the pack build.
+id = "steward.steward"
+name = "Steward"
+version = "0.0.0"
+min_herdr_version = "0.9.1"
+platforms = ["linux", "macos"]
+
+[[actions]]
+id = "up"
+title = "Steward: up"
+command = ["node", "bin/steward.js", "up"]
+
+[[actions]]
+id = "doctor"
+title = "Steward: doctor"
+command = ["node", "bin/steward.js", "doctor"]
+
+[[actions]]
+id = "intro"
+title = "Steward: intro"
+command = ["node", "bin/steward.js", "intro"]

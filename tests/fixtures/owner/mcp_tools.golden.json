@@ -1,0 +1,1112 @@
+{
+  "payloads": {
+    "get_decision": {
+      "decisions": [
+        {
+          "actions": [
+            {
+              "action": "accept",
+              "arguments": {
+                "job_id": "job-fixed-0001"
+              },
+              "tool": "accept_job"
+            }
+          ],
+          "approval_id": null,
+          "evidence": [
+            "goal: ship the widget. Done when: tests pass",
+            "verified no · commit n/a · ? · tests n/a (baseline n/a)",
+            "commits: (no baseline to compare)",
+            "worker said: (no transcript found)",
+            "watchers: none",
+            "cost $0.00",
+            "1 open question (1 ★)"
+          ],
+          "goal": "ship the widget. Done when: tests pass",
+          "job_id": "job-fixed-0001",
+          "kind": "acceptance",
+          "question": null
+        }
+      ],
+      "waiting_on_sam": 1
+    },
+    "get_questions": {
+      "answer_with": {
+        "example": {
+          "answers": [
+            {
+              "note": "optional",
+              "option": "<key or recommended>",
+              "qid": "<qid>"
+            }
+          ],
+          "job_id": "<job_id>"
+        },
+        "note": "Read Sam each card and get his words first; the star marks the recommended default.",
+        "tool": "answer_questions"
+      },
+      "jobs": [
+        {
+          "goal": "ship the widget. Done when: tests pass",
+          "job_id": "job-fixed-0001",
+          "questions": [
+            {
+              "anchor": "G1",
+              "blocking": false,
+              "blocking_reason": "",
+              "options": [
+                {
+                  "detail": "detail a",
+                  "key": "a",
+                  "label": "Option a",
+                  "recommended": true
+                },
+                {
+                  "detail": "detail b",
+                  "key": "b",
+                  "label": "Option b",
+                  "recommended": false
+                },
+                {
+                  "detail": "detail c",
+                  "key": "c",
+                  "label": "Option c",
+                  "recommended": false
+                }
+              ],
+              "qid": "gsd_context:17-CONTEXT.md:G1",
+              "question": "What about G1?",
+              "rationale": "because",
+              "recommended": [
+                "a"
+              ],
+              "recommended_text": "Option a",
+              "starred": true,
+              "status": "open",
+              "title": "Question G1"
+            }
+          ],
+          "summary": {
+            "answered": 0,
+            "blocking": 0,
+            "deferred": 0,
+            "needs_you": 0,
+            "open": 1,
+            "stale": 0,
+            "starred": 1,
+            "waiting": 1,
+            "withdrawn": 0
+          }
+        }
+      ],
+      "waiting_on_sam": 1
+    }
+  },
+  "tools": [
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "List jobs, optionally filtered by state. Running jobs carry `eta` (p10_min/p50_min/p90_min, shown, units), `eta_p50_min` and `eta_text`: the range is the answer; p50 is null until the job has finished units; eta_text is the human phrasing.",
+      "input_schema": {
+        "properties": {
+          "states": {
+            "items": {
+              "enum": [
+                "ACCEPTED",
+                "CHECKS_PASSED",
+                "CONTRACTED",
+                "CREATED",
+                "FAILED",
+                "NEEDS_HUMAN",
+                "PAUSED",
+                "RELEASED",
+                "RUNNING",
+                "STOPPED",
+                "STOPPING",
+                "WORKER_FINISHED"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "name": "list_jobs",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "Full job detail: contract, active constraints, revision, herdr location, and `eta` for a running job (the range is the answer; p50 is null until the job has finished units; `shown` is the human phrasing, the same text as eta_text in list_jobs).",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_job",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "Current heartbeat class, next contract step, pending steering receipts, and `eta` for a running job: the range is the answer; p50 is null until the job has finished units; `shown` is the human phrasing (eta_text in list_jobs).",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_current_step",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "Recent audit-trail events for a job.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "limit": {
+            "default": 20,
+            "maximum": 200,
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_recent_events",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "Latest verification result: commit, new/fixed/pre-existing failures, weakening.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_verification",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "git diff --stat and changed file list against the job's baseline commit.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_diff_summary",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "Why a job isn't progressing right now, if anything is blocking it.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "explain_blocker",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "A standard, deterministic explanation of one job (no model): what the worker is doing now, progress (units, current unit, ETA), the last 3 milestones, what it is blocked or waiting on (approvals, questions, conflicts) or 'nothing', spend so far and per hour, and health flags. `text` is the ready-to-read form.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "explain_job",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": false
+      },
+      "description": "Steer a running job. Requires expected_revision (optimistic concurrency: a stale value returns a CONFLICT receipt naming current_revision) and human_instruction (verbatim); instruction is what is actually delivered. Set urgent=true only when Sam says it cannot wait.",
+      "input_schema": {
+        "properties": {
+          "expected_revision": {
+            "type": "integer"
+          },
+          "human_instruction": {
+            "description": "verbatim human wording",
+            "type": "string"
+          },
+          "instruction": {
+            "description": "interpreted instruction to deliver",
+            "type": "string"
+          },
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          },
+          "urgent": {
+            "default": false,
+            "description": "interrupt the worker now instead of waiting for its next natural pause",
+            "type": "boolean"
+          },
+          "verb": {
+            "default": "nudge",
+            "enum": [
+              "nudge",
+              "focus",
+              "avoid",
+              "goal",
+              "priority"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id",
+          "expected_revision",
+          "instruction",
+          "human_instruction"
+        ],
+        "type": "object"
+      },
+      "name": "steer_job",
+      "required_scope": "runner:steer"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": false
+      },
+      "description": "Pause a running job.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "pause_job",
+      "required_scope": "runner:pause"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": false
+      },
+      "description": "Resume a paused job.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "resume_job",
+      "required_scope": "runner:pause"
+    },
+    {
+      "annotations": {
+        "destructiveHint": true,
+        "readOnlyHint": false
+      },
+      "description": "Stop a job. Not reversible for the current worker attempt.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "cancel_job",
+      "required_scope": "runner:cancel"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "openWorldHint": false,
+        "readOnlyHint": false
+      },
+      "description": "Approve or deny an open human-judgment approval (e.g. acceptance).",
+      "input_schema": {
+        "properties": {
+          "approval_id": {
+            "type": "string"
+          },
+          "decision": {
+            "default": "approve",
+            "enum": [
+              "approve",
+              "deny"
+            ],
+            "type": "string"
+          },
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id",
+          "approval_id"
+        ],
+        "type": "object"
+      },
+      "name": "approve_action",
+      "required_scope": "runner:approve"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "Show who is supervising a job: the worker plus the advisor, doctor, observer and any custom watchers, with each one's model, on/off switch, current status and tokens/dollars spent. Use when Sam asks 'who is watching this job' or what a supervisor is doing.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_supervisors",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "Plain-text activity feed of what the supervisors and watchers have said or done on a job, newest last. Use to answer 'what has the advisor/doctor/watchers been up to' or to see why a supervisor nudged or escalated.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "last": {
+            "default": 20,
+            "maximum": 200,
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_watchers_feed",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "Token usage and dollar cost, per job and in total: total, last hour, cached vs fresh vs output, effective tokens, USD, and a per-source breakdown (worker, advisor, doctor, watchers). Omit job_id to cover all active jobs. Use for 'how much is this costing'.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "optional; omit for all active jobs",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "get_tokens",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "What the worker actually said, ran and saw, read from its session transcript (secrets redacted): recent turns (said / tool / result / error / steer / prompt), a one-line 'now' (last tool, waiting on a result or idle), model and last activity. Use for 'what is the worker doing right now', 'why is it stuck' and 'did it take my steer' (steers show as STEER rev N). Returns the structured turns plus a plain-text rendering in `text`. `last` = turns from the end (default 10); `since` = an ISO timestamp or the previous call's next_since cursor to page forward.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "last": {
+            "description": "turns from the end (default 10)",
+            "type": "integer"
+          },
+          "since": {
+            "description": "optional ISO timestamp or turn-index cursor (next_since)",
+            "type": [
+              "string",
+              "integer"
+            ]
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_worker_activity",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "What is waiting on Sam right now: a finished job to accept or reject, a worker permission to approve or deny, or a watcher escalation. Returns the evidence (tests, commits, what the worker said), the approval id and the exact tools to call for each choice. Omit job_id to check every active job. Use this first when Sam asks 'what needs me' or before accepting anything.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "optional; omit for all active jobs",
+            "type": "string"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "get_decision",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "Dry run of merging an accepted job's work into the source repo: commits, diffstat, files touched, uncommitted-file overlap and predicted conflicts. Changes nothing. Always show this to Sam before calling incorporate_job.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "preview_incorporate",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "destructiveHint": true,
+        "readOnlyHint": false
+      },
+      "description": "Accept a finished job (its work meets the finish line). Sam's judgment call: only when he clearly says accept, ideally after you have read him get_decision's evidence. Does not merge the code; see preview_incorporate and incorporate_job for that.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "accept_job",
+      "required_scope": "runner:approve"
+    },
+    {
+      "annotations": {
+        "destructiveHint": true,
+        "readOnlyHint": false
+      },
+      "description": "Reject a finished job's acceptance request: the work is not good enough and goes back for another round. Only when Sam clearly says reject. Fails if the job has no pending acceptance.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "reject_job",
+      "required_scope": "runner:approve"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": false
+      },
+      "description": "Send a finished-but-unaccepted job (NEEDS_HUMAN) back to work with new instructions: it continues in the same worktree/branch (its commits stay) with a fresh worker that sees the goal, all prior steering and your instructions. Unlike reject_job this does NOT stop the job. Always confirm the exact instructions with Sam first and only call when he clearly says send it back. Set goal_append=true to also append them to the job's goal/contract (a change of what 'done' means); the default is a focus steer.",
+      "input_schema": {
+        "properties": {
+          "goal_append": {
+            "default": false,
+            "type": "boolean"
+          },
+          "instructions": {
+            "description": "what the worker should do now",
+            "type": "string"
+          },
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id",
+          "instructions"
+        ],
+        "type": "object"
+      },
+      "name": "send_back_job",
+      "required_scope": "runner:approve"
+    },
+    {
+      "annotations": {
+        "destructiveHint": true,
+        "readOnlyHint": false
+      },
+      "description": "Release an accepted job: clear it from the active list and close its tab. Its accepted work can still be incorporated later. Only when Sam says he is done with the job.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "release_job",
+      "required_scope": "runner:approve"
+    },
+    {
+      "annotations": {
+        "destructiveHint": true,
+        "readOnlyHint": false
+      },
+      "description": "Merge an accepted job's branch into the source repo (git merge, never forced). Changes real code: call preview_incorporate first, show Sam the result and get his explicit go. Set release=true to also release the job after a successful merge.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "release": {
+            "default": false,
+            "type": "boolean"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "incorporate_job",
+      "required_scope": "runner:approve"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": false
+      },
+      "description": "Turn a supervisor on/off for one job. role is advisor, doctor or observer (old names astra/sol/jev also work) or the name of a custom watcher. state is optional: omit to flip to the next state; the advisor cycles off/shadow/active, the others on/off. This only ever narrows or restores defaults.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          },
+          "role": {
+            "description": "advisor, doctor, observer, or a custom watcher name",
+            "type": "string"
+          },
+          "state": {
+            "description": "optional; default toggle",
+            "enum": [
+              "on",
+              "off",
+              "shadow",
+              "active",
+              "toggle"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id",
+          "role"
+        ],
+        "type": "object"
+      },
+      "name": "toggle_supervisor",
+      "required_scope": "runner:steer"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": false
+      },
+      "description": "Attach a custom watcher to a job: a small model that periodically checks a question you write (ask) and can nudge the worker or escalate to Sam. every is a duration like 10m; may lists its powers (nudge, escalate). Use when Sam says 'keep an eye on X'.",
+      "input_schema": {
+        "properties": {
+          "ask": {
+            "description": "what the watcher should check each time",
+            "type": "string"
+          },
+          "every": {
+            "default": "10m",
+            "type": "string"
+          },
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "may": {
+            "default": [],
+            "items": {
+              "enum": [
+                "nudge",
+                "escalate"
+              ],
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "model": {
+            "default": "haiku",
+            "type": "string"
+          },
+          "name": {
+            "description": "lowercase letters, digits, - or _",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id",
+          "name",
+          "ask"
+        ],
+        "type": "object"
+      },
+      "name": "add_watcher",
+      "required_scope": "runner:steer"
+    },
+    {
+      "annotations": {
+        "destructiveHint": true,
+        "readOnlyHint": false
+      },
+      "description": "Remove a custom watcher from a job.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id",
+          "name"
+        ],
+        "type": "object"
+      },
+      "name": "remove_watcher",
+      "required_scope": "runner:steer"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": false
+      },
+      "description": "Create a new job (does NOT start it): Steward inspects the repo and drafts a contract with a goal, boundaries and done-when checks. The result includes contract_text: read it back to Sam in plain language and ask for his explicit go. Only after he says go, call launch_job. repo is a path on the Steward machine; finish_line is an optional plain-language definition of done.",
+      "input_schema": {
+        "properties": {
+          "finish_line": {
+            "type": "string"
+          },
+          "follow_up": {
+            "description": "id of a finished (ACCEPTED/RELEASED) job this one continues; repo defaults to its repo",
+            "type": "string"
+          },
+          "goal": {
+            "type": "string"
+          },
+          "grant_keys": {
+            "description": "API key names (e.g. SCRAPECREATORS_API_KEY) to put in the worker's environment",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "repo": {
+            "description": "absolute path of the repo the job works on",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          },
+          "research": {
+            "description": "give the worker the sanctioned research MCP (spend-capped)",
+            "type": "boolean"
+          },
+          "research_cap": {
+            "description": "research spend cap in USD (default 5)",
+            "type": "number"
+          },
+          "watchers": {
+            "items": {
+              "properties": {
+                "ask": {
+                  "type": "string"
+                },
+                "every": {
+                  "type": "string"
+                },
+                "may": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "model": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "ask"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "goal",
+          "repo"
+        ],
+        "type": "object"
+      },
+      "name": "create_job",
+      "required_scope": "runner:approve"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "One readable report on a job: goal, finish line, state, verdict/evidence, the worker's final message, changed files, branch, merge commit, cost, follow-up links and the next commands that apply.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "get_result",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "readOnlyHint": true
+      },
+      "description": "The questions a job's worker left for Sam (gray areas, design choices), as cards: a title, the question, options with the recommended one first and starred, a rationale, and whether it blocks work (blocking questions come first). Read-only. Omit job_id to see every active job that has questions waiting; include 'all' also shows answered and deferred ones; round pages four cards at a time. Read the cards to Sam, then call answer_questions with what he says.",
+      "input_schema": {
+        "properties": {
+          "include": {
+            "default": "waiting",
+            "enum": [
+              "waiting",
+              "all"
+            ],
+            "type": "string"
+          },
+          "job_id": {
+            "description": "optional; omit for every active job with questions waiting",
+            "type": "string"
+          },
+          "limit": {
+            "default": 15,
+            "maximum": 50,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "round": {
+            "description": "page of four cards",
+            "minimum": 1,
+            "type": "integer"
+          }
+        },
+        "required": [],
+        "type": "object"
+      },
+      "name": "get_questions",
+      "required_scope": "runner:read"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": false
+      },
+      "description": "Record Sam's answers to a job's waiting questions. Only call this with Sam's own words: read him the card from get_questions first (blocking questions come first), then pass his choice per question: option (a key, or 'recommended' for the starred default), other (his own words) or defer:true, with an optional note. accept_recommended:true answers every OPEN STARRED card with its recommended default (cards without a star are left for him), so confirm that with him first. done:true writes the batch to the job now instead of waiting for the quiet period. At most 15 answers per call. This tool cannot send the job back, accept it or write the source branch: use send_back_job or accept_job for those.",
+      "input_schema": {
+        "properties": {
+          "accept_recommended": {
+            "default": false,
+            "type": "boolean"
+          },
+          "answers": {
+            "items": {
+              "properties": {
+                "defer": {
+                  "type": "boolean"
+                },
+                "note": {
+                  "description": "optional note from Sam",
+                  "type": "string"
+                },
+                "option": {
+                  "description": "an option key, or 'recommended'",
+                  "type": "string"
+                },
+                "other": {
+                  "description": "Sam's own answer in his words",
+                  "type": "string"
+                },
+                "qid": {
+                  "description": "the card's qid or its anchor, e.g. G4",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "qid"
+              ],
+              "type": "object"
+            },
+            "maxItems": 15,
+            "type": "array"
+          },
+          "done": {
+            "default": false,
+            "type": "boolean"
+          },
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "qids": {
+            "description": "limit accept_recommended to these cards",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "answer_questions",
+      "required_scope": "runner:steer"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": false
+      },
+      "description": "Start a created job: opens its Herdr tab and begins a worker running with real budget. Never call this until you have read the contract (from create_job or get_job) back to Sam and he has explicitly said go. model picks the worker model (default sonnet).",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "model": {
+            "default": "sonnet",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "launch_job",
+      "required_scope": "runner:approve"
+    },
+    {
+      "annotations": {
+        "destructiveHint": false,
+        "readOnlyHint": false
+      },
+      "description": "Launch a staged job (created, contract ready, never launched) exactly like launch_job, using the launch settings recorded on the job if any, else the default sonnet worker. Does nothing if it is already launched.",
+      "input_schema": {
+        "properties": {
+          "job_id": {
+            "description": "Steward job id",
+            "type": "string"
+          },
+          "request_id": {
+            "description": "optional idempotency key",
+            "type": "string"
+          }
+        },
+        "required": [
+          "job_id"
+        ],
+        "type": "object"
+      },
+      "name": "play_job",
+      "required_scope": "runner:approve"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "description": "Steward: one durable, steerable job runner for coding agents in Herdr.",
+  "private": true,
+  "license": "MIT",
+  "bin": {
+    "steward": "bin/steward.js"
+  },
+  "files": [
+    "bin/",
+    "steward/",
+    "herdr-plugin.toml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "os": [
+    "linux",
+    "darwin"
+  ],
+  "scripts": {
+    "prepack": "python3 \"${STEWARD_PACK_AUDIT:-$npm_config_steward_pack_audit}\" --prepack"
+  }
+}

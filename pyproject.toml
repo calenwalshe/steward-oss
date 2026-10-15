@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "steward"
+version = "0.1.0"
+description = "Steward — one durable, steerable job runner."
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+# `pip install -e .[checks]` in the service environment: the check runner parallelizes full-suite pytest with xdist
+checks = ["pytest", "pytest-xdist>=3.8,<4"]
+
+[project.scripts]
+steward = "steward.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["steward*"]
+
+[tool.setuptools.package-data]
+steward = ["templates/*", "templates/*/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]  # bare `pytest` must test this tree, not an editable install elsewhere
+addopts = "-m 'not integration'"
+markers = [
+    "integration: exercises a real Herdr session (tests/herdr_session.py); skipped by default (FAB-04/05).",
+    "real_repo: reads the real repository (git diff/log); exempt from the main-checkout index check.",
+]

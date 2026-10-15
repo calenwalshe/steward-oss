@@ -1,0 +1,361 @@
+{
+ "attempts": [
+  {
+   "at": 1790751555.504512,
+   "no": 1,
+   "rework": false
+  }
+ ],
+ "base": {
+  "files": [
+   ".planning/phases/01-durable-core/01-01-PLAN.md",
+   ".planning/phases/01-durable-core/01-01-SUMMARY.md",
+   ".planning/phases/02-discovery-contract/02-01-PLAN.md",
+   ".planning/phases/02-discovery-contract/02-01-SUMMARY.md",
+   ".planning/phases/03-worker-steering/03-01-PLAN.md",
+   ".planning/phases/03-worker-steering/03-01-SUMMARY.md",
+   ".planning/phases/04-watch-recover/04-01-PLAN.md",
+   ".planning/phases/04-watch-recover/04-01-SUMMARY.md",
+   ".planning/phases/05-done-means-done/05-01-PLAN.md",
+   ".planning/phases/05-done-means-done/05-01-SUMMARY.md",
+   ".planning/phases/06-control-api-moshi/06-01-PLAN.md",
+   ".planning/phases/06-control-api-moshi/06-01-SUMMARY.md",
+   ".planning/phases/07-chatgpt-mcp/07-01-PLAN.md",
+   ".planning/phases/07-chatgpt-mcp/07-01-SUMMARY.md",
+   ".planning/phases/08-public-connector/08-01-PLAN.md",
+   ".planning/phases/08-public-connector/08-01-SUMMARY.md",
+   ".planning/phases/09-herdr-fabric/09-01-PLAN.md",
+   ".planning/phases/09-herdr-fabric/09-02-PLAN.md",
+   ".planning/phases/09-herdr-fabric/09-02-SUMMARY.md",
+   ".planning/phases/10-headless-worker/10-01-PLAN.md",
+   ".planning/phases/10-headless-worker/10-01-SUMMARY.md",
+   ".planning/phases/10-headless-worker/10-02-PLAN.md",
+   ".planning/phases/10-headless-worker/10-02-SUMMARY.md",
+   ".planning/phases/10-headless-worker/10-03-PLAN.md",
+   ".planning/phases/10-headless-worker/10-03-SUMMARY.md",
+   ".planning/phases/10-headless-worker/10-04-PLAN.md",
+   ".planning/phases/10-headless-worker/10-04-SUMMARY.md",
+   ".planning/phases/11-operator-exceptions/11-01-PLAN.md",
+   ".planning/phases/11-operator-exceptions/11-01-SUMMARY.md",
+   ".planning/phases/11-operator-exceptions/11-02-PLAN.md",
+   ".planning/phases/11-operator-exceptions/11-02-SUMMARY.md",
+   ".planning/phases/11-operator-exceptions/11-03-PLAN.md",
+   ".planning/phases/11-operator-exceptions/11-03-SUMMARY.md",
+   ".planning/phases/12-trajectory-loop/12-01-PLAN.md",
+   ".planning/phases/12-trajectory-loop/12-01-SUMMARY.md",
+   ".planning/phases/12-trajectory-loop/12-02-PLAN.md",
+   ".planning/phases/12-trajectory-loop/12-02-SUMMARY.md",
+   ".planning/phases/12-trajectory-loop/12-03-PLAN.md",
+   ".planning/phases/12-trajectory-loop/12-03-SUMMARY.md",
+   ".planning/phases/12-trajectory-loop/12-04-PLAN.md",
+   ".planning/phases/12-trajectory-loop/12-04-SUMMARY.md",
+   ".planning/phases/13-operator-polish/13-01-PLAN.md",
+   ".planning/phases/13-operator-polish/13-01-SUMMARY.md",
+   ".planning/phases/14-no-blockers/14-01-PLAN.md",
+   ".planning/phases/14-no-blockers/14-01-SUMMARY.md",
+   ".planning/phases/15-watcher-authority/15-01-PLAN.md",
+   ".planning/phases/15-watcher-authority/15-01-SUMMARY.md",
+   ".planning/phases/15-watcher-authority/15-02-PLAN.md",
+   ".planning/phases/15-watcher-authority/15-02-SUMMARY.md",
+   ".planning/phases/15-watcher-authority/15-03-PLAN.md",
+   ".planning/phases/15-watcher-authority/15-03-SUMMARY.md"
+  ],
+  "roadmap": {
+   "1": null,
+   "12": null,
+   "16": null,
+   "2": null,
+   "3": null,
+   "4": null,
+   "5": null,
+   "6": null,
+   "7": null,
+   "8": null
+  },
+  "state": null
+ },
+ "commits": [
+  {
+   "add": [
+    ".planning/phases/16-efficiency-watcher/16-01-PLAN.md",
+    ".planning/phases/16-efficiency-watcher/16-02-PLAN.md",
+    ".planning/phases/16-efficiency-watcher/16-03-PLAN.md",
+    ".planning/phases/16-efficiency-watcher/16-04-PLAN.md",
+    ".planning/phases/16-efficiency-watcher/16-05-PLAN.md",
+    ".planning/phases/16-efficiency-watcher/16-06-PLAN.md",
+    ".planning/phases/16-efficiency-watcher/16-07-PLAN.md"
+   ],
+   "at": 1790753473,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(16): plan"
+  },
+  {
+   "add": [],
+   "at": 1790753728,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-01): work"
+  },
+  {
+   "add": [],
+   "at": 1790753856,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-01): work"
+  },
+  {
+   "add": [
+    ".planning/phases/16-efficiency-watcher/16-01-SUMMARY.md"
+   ],
+   "at": 1790753868,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(16-01): summary"
+  },
+  {
+   "add": [],
+   "at": 1790754260,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-02): work"
+  },
+  {
+   "add": [],
+   "at": 1790754470,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-02): work"
+  },
+  {
+   "add": [],
+   "at": 1790754634,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-02): work"
+  },
+  {
+   "add": [
+    ".planning/phases/16-efficiency-watcher/16-02-SUMMARY.md"
+   ],
+   "at": 1790754649,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(16-02): summary"
+  },
+  {
+   "add": [],
+   "at": 1790754903,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-03): work"
+  },
+  {
+   "add": [],
+   "at": 1790755071,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-03): work"
+  },
+  {
+   "add": [],
+   "at": 1790755236,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-03): work"
+  },
+  {
+   "add": [
+    ".planning/phases/16-efficiency-watcher/16-03-SUMMARY.md"
+   ],
+   "at": 1790755251,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(16-03): summary"
+  },
+  {
+   "add": [],
+   "at": 1790755686,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-04): work"
+  },
+  {
+   "add": [],
+   "at": 1790755965,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-04): work"
+  },
+  {
+   "add": [],
+   "at": 1790756120,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-04): work"
+  },
+  {
+   "add": [
+    ".planning/phases/16-efficiency-watcher/16-04-SUMMARY.md"
+   ],
+   "at": 1790756142,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(16-04): summary"
+  },
+  {
+   "add": [],
+   "at": 1790756646,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-05): work"
+  },
+  {
+   "add": [],
+   "at": 1790756841,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-05): work"
+  },
+  {
+   "add": [],
+   "at": 1790757095,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-05): work"
+  },
+  {
+   "add": [
+    ".planning/phases/16-efficiency-watcher/16-05-SUMMARY.md"
+   ],
+   "at": 1790757134,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(16-05): summary"
+  },
+  {
+   "add": [],
+   "at": 1790757397,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-06): work"
+  },
+  {
+   "add": [],
+   "at": 1790757633,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-06): work"
+  },
+  {
+   "add": [],
+   "at": 1790757941,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-06): work"
+  },
+  {
+   "add": [
+    ".planning/phases/16-efficiency-watcher/16-06-SUMMARY.md"
+   ],
+   "at": 1790757963,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(16-06): summary"
+  },
+  {
+   "add": [],
+   "at": 1790758364,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-07): work"
+  },
+  {
+   "add": [],
+   "at": 1790758695,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-07): work"
+  },
+  {
+   "add": [],
+   "at": 1790758925,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(16-07): verification"
+  },
+  {
+   "add": [
+    ".planning/phases/16-efficiency-watcher/16-07-SUMMARY.md"
+   ],
+   "at": 1790758952,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(16-07): summary"
+  }
+ ],
+ "done": [
+  1790759128.812157
+ ],
+ "goal": "Build Steward Phase 16 \"Efficiency watcher\" with GSD, end to end.",
+ "job": "a7d292d8",
+ "sent_back": [],
+ "t0": 1790751422.271489,
+ "truth_min": 128.4
+}

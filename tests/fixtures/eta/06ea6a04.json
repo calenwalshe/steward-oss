@@ -1,0 +1,1495 @@
+{
+ "attempts": [
+  {
+   "at": 1790730645.574131,
+   "no": 1,
+   "rework": false
+  }
+ ],
+ "base": {
+  "files": [],
+  "roadmap": null,
+  "state": null
+ },
+ "commits": [
+  {
+   "add": [
+    ".planning/ROADMAP.md",
+    ".planning/STATE.md"
+   ],
+   "at": 1790731464,
+   "delete": [],
+   "modify": [],
+   "roadmap": {
+    "1": null,
+    "2": null,
+    "3": null,
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null
+   },
+   "state": {
+    "completed_phases": 0,
+    "completed_plans": 0,
+    "percent": 0,
+    "total_phases": 8,
+    "total_plans": 0
+   },
+   "subject": "docs: work"
+  },
+  {
+   "add": [],
+   "at": 1790731506,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(01): context"
+  },
+  {
+   "add": [
+    ".planning/phases/01-toolchain-core/01-01-PLAN.md",
+    ".planning/phases/01-toolchain-core/01-02-PLAN.md",
+    ".planning/phases/01-toolchain-core/01-03-PLAN.md"
+   ],
+   "at": 1790732641,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": null,
+    "3": null,
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null
+   },
+   "state": null,
+   "subject": "docs(01): plan"
+  },
+  {
+   "add": [],
+   "at": 1790732723,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "build: work"
+  },
+  {
+   "add": [],
+   "at": 1790732764,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "build: work"
+  },
+  {
+   "add": [],
+   "at": 1790732960,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "build: work"
+  },
+  {
+   "add": [
+    ".planning/phases/01-toolchain-core/01-01-SUMMARY.md"
+   ],
+   "at": 1790732992,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(01-01): summary"
+  },
+  {
+   "add": [],
+   "at": 1790733035,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790733148,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790733186,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/01-toolchain-core/01-02-SUMMARY.md"
+   ],
+   "at": 1790733216,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(01-02): summary"
+  },
+  {
+   "add": [],
+   "at": 1790733260,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790733304,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790733371,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790733371,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(01): verification"
+  },
+  {
+   "add": [
+    ".planning/phases/01-toolchain-core/01-03-SUMMARY.md"
+   ],
+   "at": 1790733403,
+   "delete": [],
+   "modify": [
+    ".planning/phases/01-toolchain-core/01-01-SUMMARY.md"
+   ],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(01-03): summary"
+  },
+  {
+   "add": [],
+   "at": 1790733591,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(01): verification"
+  },
+  {
+   "add": [],
+   "at": 1790734022,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md",
+    ".planning/STATE.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": null,
+    "3": null,
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null
+   },
+   "state": {
+    "completed_phases": 1,
+    "completed_plans": 3,
+    "percent": 13,
+    "total_phases": 8,
+    "total_plans": 3
+   },
+   "subject": "docs(01): verification"
+  },
+  {
+   "add": [
+    ".planning/phases/02-app-shell-f/02-01-PLAN.md",
+    ".planning/phases/02-app-shell-f/02-02-PLAN.md",
+    ".planning/phases/02-app-shell-f/02-03-PLAN.md"
+   ],
+   "at": 1790735107,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": null,
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null
+   },
+   "state": null,
+   "subject": "docs(02): plan"
+  },
+  {
+   "add": [],
+   "at": 1790735129,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(03-08): context"
+  },
+  {
+   "add": [],
+   "at": 1790735250,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790735352,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790735378,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/02-app-shell-f/02-01-SUMMARY.md"
+   ],
+   "at": 1790735413,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(02-01): summary"
+  },
+  {
+   "add": [],
+   "at": 1790735491,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790735547,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790735629,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/02-app-shell-f/02-02-SUMMARY.md"
+   ],
+   "at": 1790735653,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(02-02): summary"
+  },
+  {
+   "add": [],
+   "at": 1790735791,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790735974,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790736076,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/02-app-shell-f/02-03-SUMMARY.md"
+   ],
+   "at": 1790736130,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(02-03): summary"
+  },
+  {
+   "add": [],
+   "at": 1790736237,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(02): verification"
+  },
+  {
+   "add": [],
+   "at": 1790736768,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md",
+    ".planning/STATE.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": null,
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null
+   },
+   "state": {
+    "completed_phases": 2,
+    "completed_plans": 6,
+    "percent": 25,
+    "total_phases": 8,
+    "total_plans": 6
+   },
+   "subject": "docs(02): verification"
+  },
+  {
+   "add": [
+    ".planning/phases/03-live-read-only-auth/03-01-PLAN.md",
+    ".planning/phases/03-live-read-only-auth/03-02-PLAN.md",
+    ".planning/phases/03-live-read-only-auth/03-03-PLAN.md"
+   ],
+   "at": 1790738079,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": null,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null
+   },
+   "state": null,
+   "subject": "docs(03): plan"
+  },
+  {
+   "add": [],
+   "at": 1790738248,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790738477,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790738717,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/03-live-read-only-auth/03-01-SUMMARY.md"
+   ],
+   "at": 1790738776,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(03-01): summary"
+  },
+  {
+   "add": [],
+   "at": 1790738882,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790739226,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790739430,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/03-live-read-only-auth/03-02-SUMMARY.md"
+   ],
+   "at": 1790739507,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(03-02): summary"
+  },
+  {
+   "add": [],
+   "at": 1790739608,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/04-decisions-writes/04-01-PLAN.md",
+    ".planning/phases/04-decisions-writes/04-02-PLAN.md",
+    ".planning/phases/04-decisions-writes/04-03-PLAN.md"
+   ],
+   "at": 1790739617,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null
+   },
+   "state": null,
+   "subject": "docs(04): plan"
+  },
+  {
+   "add": [],
+   "at": 1790739976,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790740133,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/03-live-read-only-auth/03-03-SUMMARY.md"
+   ],
+   "at": 1790740200,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(03-03): summary"
+  },
+  {
+   "add": [],
+   "at": 1790740369,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(03): verification"
+  },
+  {
+   "add": [],
+   "at": 1790740384,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md",
+    ".planning/STATE.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": null,
+    "6": null,
+    "7": null,
+    "8": null
+   },
+   "state": {
+    "completed_phases": 3,
+    "completed_plans": 9,
+    "percent": 38,
+    "total_phases": 8,
+    "total_plans": 12
+   },
+   "subject": "docs(03): verification"
+  },
+  {
+   "add": [],
+   "at": 1790740936,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790741150,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790741306,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/04-decisions-writes/04-01-SUMMARY.md"
+   ],
+   "at": 1790741369,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(04-01): summary"
+  },
+  {
+   "add": [],
+   "at": 1790741707,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/05-transcript-steer-launch/05-01-PLAN.md",
+    ".planning/phases/05-transcript-steer-launch/05-02-PLAN.md",
+    ".planning/phases/05-transcript-steer-launch/05-03-PLAN.md"
+   ],
+   "at": 1790741937,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": null,
+    "7": null,
+    "8": null
+   },
+   "state": null,
+   "subject": "docs(05): plan"
+  },
+  {
+   "add": [],
+   "at": 1790742036,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790742118,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/04-decisions-writes/04-02-SUMMARY.md"
+   ],
+   "at": 1790742173,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(04-02): summary"
+  },
+  {
+   "add": [],
+   "at": 1790742343,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790742656,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790742914,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790742914,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/04-decisions-writes/04-03-SUMMARY.md"
+   ],
+   "at": 1790743266,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(04-03): summary"
+  },
+  {
+   "add": [],
+   "at": 1790743531,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(04): verification"
+  },
+  {
+   "add": [],
+   "at": 1790743548,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md",
+    ".planning/STATE.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": null,
+    "7": null,
+    "8": null
+   },
+   "state": {
+    "completed_phases": 4,
+    "completed_plans": 12,
+    "percent": 50,
+    "total_phases": 8,
+    "total_plans": 17
+   },
+   "subject": "docs(04): verification"
+  },
+  {
+   "add": [],
+   "at": 1790743696,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore(05-01): work"
+  },
+  {
+   "add": [
+    ".planning/phases/06-notifications-ask/06-01-PLAN.md",
+    ".planning/phases/06-notifications-ask/06-02-PLAN.md",
+    ".planning/phases/06-notifications-ask/06-03-PLAN.md"
+   ],
+   "at": 1790743752,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": null,
+    "8": null
+   },
+   "state": null,
+   "subject": "docs(06): plan"
+  },
+  {
+   "add": [],
+   "at": 1790744344,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790744536,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790744764,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/05-transcript-steer-launch/05-01-SUMMARY.md"
+   ],
+   "at": 1790744811,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(05-01): summary"
+  },
+  {
+   "add": [],
+   "at": 1790745158,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/07-steward-server-spec/07-01-PLAN.md",
+    ".planning/phases/07-steward-server-spec/07-02-PLAN.md"
+   ],
+   "at": 1790745291,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 2,
+    "8": null
+   },
+   "state": null,
+   "subject": "docs(07): plan"
+  },
+  {
+   "add": [],
+   "at": 1790745641,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790745997,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/05-transcript-steer-launch/05-02-SUMMARY.md"
+   ],
+   "at": 1790746048,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(05-02): summary"
+  },
+  {
+   "add": [],
+   "at": 1790746474,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790746785,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790746999,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "test(05): work"
+  },
+  {
+   "add": [
+    ".planning/phases/05-transcript-steer-launch/05-03-SUMMARY.md"
+   ],
+   "at": 1790747051,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(05-03): summary"
+  },
+  {
+   "add": [
+    ".planning/phases/08-hardening-release/08-01-PLAN.md",
+    ".planning/phases/08-hardening-release/08-02-PLAN.md",
+    ".planning/phases/08-hardening-release/08-03-PLAN.md"
+   ],
+   "at": 1790747152,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 2,
+    "8": 3
+   },
+   "state": null,
+   "subject": "docs(08): plan"
+  },
+  {
+   "add": [],
+   "at": 1790747215,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(05): verification"
+  },
+  {
+   "add": [],
+   "at": 1790747235,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md",
+    ".planning/STATE.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 2,
+    "8": 3
+   },
+   "state": {
+    "completed_phases": 5,
+    "completed_plans": 15,
+    "percent": 63,
+    "total_phases": 8,
+    "total_plans": 23
+   },
+   "subject": "docs(05): verification"
+  },
+  {
+   "add": [],
+   "at": 1790747508,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore(06-01): work"
+  },
+  {
+   "add": [],
+   "at": 1790747508,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790747632,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790747842,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/06-notifications-ask/06-01-SUMMARY.md"
+   ],
+   "at": 1790747878,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(06-01): summary"
+  },
+  {
+   "add": [],
+   "at": 1790748018,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790748222,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790748489,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/06-notifications-ask/06-02-SUMMARY.md"
+   ],
+   "at": 1790748562,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(06-02): summary"
+  },
+  {
+   "add": [],
+   "at": 1790748776,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790748975,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790749150,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "test(06): work"
+  },
+  {
+   "add": [
+    ".planning/phases/06-notifications-ask/06-03-SUMMARY.md"
+   ],
+   "at": 1790749197,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(06-03): summary"
+  },
+  {
+   "add": [],
+   "at": 1790749372,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(06): verification"
+  },
+  {
+   "add": [],
+   "at": 1790749393,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md",
+    ".planning/STATE.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 2,
+    "8": 3
+   },
+   "state": {
+    "completed_phases": 6,
+    "completed_plans": 18,
+    "percent": 75,
+    "total_phases": 8,
+    "total_plans": 23
+   },
+   "subject": "docs(06): verification"
+  },
+  {
+   "add": [],
+   "at": 1790749943,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(07): work"
+  },
+  {
+   "add": [],
+   "at": 1790750161,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(07): work"
+  },
+  {
+   "add": [],
+   "at": 1790750438,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(07): work"
+  },
+  {
+   "add": [
+    ".planning/phases/07-steward-server-spec/07-01-SUMMARY.md"
+   ],
+   "at": 1790750470,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(07-01): summary"
+  },
+  {
+   "add": [],
+   "at": 1790751003,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790751840,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790752266,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/07-steward-server-spec/07-02-SUMMARY.md"
+   ],
+   "at": 1790752490,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(07-02): summary"
+  },
+  {
+   "add": [],
+   "at": 1790752813,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(07): verification"
+  },
+  {
+   "add": [],
+   "at": 1790752828,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md",
+    ".planning/STATE.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 2,
+    "8": 3
+   },
+   "state": {
+    "completed_phases": 7,
+    "completed_plans": 20,
+    "percent": 88,
+    "total_phases": 8,
+    "total_plans": 23
+   },
+   "subject": "docs(07): verification"
+  },
+  {
+   "add": [],
+   "at": 1790752979,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore(08): work"
+  },
+  {
+   "add": [],
+   "at": 1790753156,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790753519,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790753899,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/08-hardening-release/08-01-SUMMARY.md"
+   ],
+   "at": 1790753954,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(08-01): summary"
+  },
+  {
+   "add": [],
+   "at": 1790754038,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: verification"
+  },
+  {
+   "add": [],
+   "at": 1790754257,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790754602,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [
+    ".planning/phases/08-hardening-release/08-02-SUMMARY.md"
+   ],
+   "at": 1790754638,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(08-02): summary"
+  },
+  {
+   "add": [],
+   "at": 1790754975,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs: verification"
+  },
+  {
+   "add": [],
+   "at": 1790755118,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: verification"
+  },
+  {
+   "add": [],
+   "at": 1790755304,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "chore: work"
+  },
+  {
+   "add": [],
+   "at": 1790755464,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(08): verification"
+  },
+  {
+   "add": [
+    ".planning/phases/08-hardening-release/08-03-SUMMARY.md"
+   ],
+   "at": 1790755522,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(08-03): summary"
+  },
+  {
+   "add": [],
+   "at": 1790755953,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(08): verification"
+  },
+  {
+   "add": [],
+   "at": 1790755979,
+   "delete": [],
+   "modify": [
+    ".planning/ROADMAP.md",
+    ".planning/STATE.md"
+   ],
+   "roadmap": {
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 2,
+    "8": 3
+   },
+   "state": {
+    "completed_phases": 8,
+    "completed_plans": 23,
+    "percent": 100,
+    "total_phases": 8,
+    "total_plans": 23
+   },
+   "subject": "docs(08): verification"
+  },
+  {
+   "add": [],
+   "at": 1790755986,
+   "delete": [],
+   "modify": [
+    ".planning/STATE.md"
+   ],
+   "roadmap": null,
+   "state": {
+    "completed_phases": 8,
+    "completed_plans": 23,
+    "percent": 100,
+    "total_phases": 8,
+    "total_plans": 23
+   },
+   "subject": "docs: verification"
+  }
+ ],
+ "done": [
+  1790756023.782754
+ ],
+ "goal": "Take the Steward Android app from the committed docs to a deployed, installable build, autonomously, using GSD.",
+ "job": "06ea6a04",
+ "sent_back": [],
+ "t0": 1790730644.486689,
+ "truth_min": 423.0
+}

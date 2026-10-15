@@ -1,0 +1,17 @@
+# 2026-10-04, isolated proof home ($HOME/.cache/steward-proof); agy 1.2.16 behind the Steward hook gate (bwrap sandbox)
+# permission_relay probed for real: deny then approve through the gate, each checked by its side effect (marker file)
+# see docs/fleet-evidence/agy-permission-audit.md, section "Hook-gate route"
+$ STEWARD_HOME=$HOME/.cache/steward-proof/home STEWARD_CONFIG_DIR=$HOME/.cache/steward-proof/cfg TMPDIR=$HOME/.cache/steward-proof/tmp python3 -c 'import sys; from steward.cli import main; sys.exit(main(sys.argv[1:]))' fleet qualify agy
+agy  adapter v2  cli=1.2.16  model=default  worktree=/home/user/.cache/steward-proof/home/qualify/agy-20261004T203752884652Z
+  launch  qualified  started agy:5a587078-734d-49e6-9918-7f561df3aa03 turn t1
+  identity  qualified  session=ed21ce5a-8bf7-41c6-b4c4-2b2f80c98bd0 model=Gemini 3.8 Flash (High) pid=738002
+  poll  qualified  lifecycle=working
+  steer_ack  qualified  deliver=delivered acks=1
+  permission_relay  qualified  deny: relayed Bash {"command": "touch steward-approval-marker", "cwd": "/home/user/.cache/steward-: denied; turn ended ['done']; marker absent=True | approve: relayed Bash {"command": "touch steward-approval-marker", "cwd": "/home/user/.cache/steward-: approved; turn ended ['done']; marker present=True (hook gate: agy-permission-audit.md)
+  typed_result  qualified  typed frames ['done']
+  cancel  qualified  typed interrupted result observed
+  stop_confirm  qualified  terminate_tree=True alive=False
+  reattach  qualified  attach agy:347b6eb5-1fbf-4172-bf9f-d7ad28c7dc0d via --conversation: True
+  usage  qualified  usage={'tokens': 12043, 'cost_usd': None, 'source': 'agy_stream_json', 'confidence': 'reported'}
+agy: QUALIFIED to dispatch
+EXIT 0

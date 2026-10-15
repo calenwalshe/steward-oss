@@ -1,0 +1,10 @@
+$ cd /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/ws-r6-_agents && echo '{"event": "user", "message": {"role": "user", "content": "Run the shell command `touch steward-marker.txt` and report whether it succeeded."}}' | HOME=/home/user/.cache/steward-proof/agyhomes/r6-_agents agy --input-format stream-json --output-format stream-json -p= --log-file /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/r6-_agents.log
+rc=0 elapsed=6.1s
+{"event": "step_update", "step_update": {"conversation_id": "8fb5d46f-24cb-4120-8583-b9304e3b96dc", "step_index": 2, "state": "ACTIVE", "step_type": "tool", "tool_name": "run_command", "tool_info": {"name": "run_command", "parameters": {"CommandLine": "touch steward-marker.txt"}}}}
+{"event": "step_update", "step_update": {"conversation_id": "8fb5d46f-24cb-4120-8583-b9304e3b96dc", "step_index": 2, "state": "ERROR", "step_type": "tool", "tool_name": "run_command", "duration_seconds": 0.039819952, "tool_info": {"name": "run_command", "parameters": {"CommandLine": "touch steward-marker.txt"}, "error": {"type": "TOOL_ERROR", "message": "tool call denied by pre-tool hook: steward gate: denied"}}}}
+{"event": "result", "result": {"conversation_id": "8fb5d46f-24cb-4120-8583-b9304e3b96dc", "status": "SUCCESS", "response": "The command `touch steward-marker.txt` **did not succeed**. It was denied by the environment's pre-tool hook:\n\n```\ntool call denied by pre-tool hook: steward gate: denied\n```\n", "duration_seconds": 4.420400009, "num_turns": 1, "usage": {"input_tokens": 16066, "output_tokens": 411, "thinking_tokens": 253, "cache_read_tokens": 8132, "total_tokens": 16477}}}
+--- stderr:
+
+--- steward hook calls: []
+--- workspace hook calls: ['deny']
+--- workspace files: ['.agents/hook-calls.txt', '.agents/hook-in-556616.json', '.agents/hook.sh', '.agents/hooks.json', 'seed.txt']

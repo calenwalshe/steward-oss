@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# steward-dash: live Steward cockpit panel (services + public connector + jobs). Ctrl-C to exit.
+# One resident Python process (steward/dashapp.py) owns the terminal: taps are handled the moment they arrive and the
+# data refreshes in a background thread (jobs ~1 s, tokens 10 s, public connector 30 s). The renderer is
+# steward/dashrender.py; deploy/cockpit/steward-dash-jobs.py is its one-shot wrapper (tests, tooling).
+# Click a job (or press its number) to jump to that job's Herdr tab; click its [n] to fold it; click a supervisor row
+# (worker/astra/sol) to open a chat with that model; click a yellow question line to expand its evidence panel, then
+# its [ buttons ] (one tap acts; accept-all needs a confirming second tap); a supervisor's [switch] turns it on/off.
+cd "$HOME/work/work-20260926-135916" || exit 1
+export PYTHONPATH="$PWD${PYTHONPATH:+:$PYTHONPATH}"  # steward is imported from the repo
+exec python3 -m steward.dashapp "$@"

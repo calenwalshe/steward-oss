@@ -1,0 +1,10 @@
+=== t3_unreachable 2026-10-04T13:18:33-0700
+$ scenario t3_unreachable: AgyStreamAdapter(gate_dir=/home/user/.cache/steward-proof/home/agy-gate/proof/t3_unreachable).start('Run the shell command `touch steward-marker.txt` in the current directory and report whether it succeeded.', /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/proof-ws/t3_unreachable)
+  started agy:936f4613-2f96-4613-bd3f-a1ea50ea7c7e; agy HOME=/home/user/.cache/steward-proof/home/agy-gate/proof/t3_unreachable/home; hook name=steward-gate-a89927aee18cb1ef813d66d75f3adcfd
+  (Steward's gate socket closed and removed before the tool call)
+  agy step 2 run_command ERROR {"CommandLine": "touch steward-marker.txt"} tool call denied by pre-tool hook: steward gate unreachable: FileNotFoundError
+  agy result status=SUCCESS denied_actions=None response='The command `touch steward-marker.txt` did not succeed. \n\nIt was denied prior to execution by the pre-tool hook with the following error:\n> `tool call denied by'
+  done: {"turn_id": "t1", "status": "completed", "evidence_ref": "agy:936f4613-2f96-4613-bd3f-a1ea50ea7c7e:t1"}
+  gate hard-denied without asking: []
+  elapsed 7.2s; workspace files: ['seed.txt']
+  marker present: False

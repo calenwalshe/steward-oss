@@ -1,0 +1,40 @@
+# Steward model roster: which models may work on jobs and which may supervise them.
+# Default: Claude only (Claude Code is the one required harness). Add entries for other runtimes you have,
+# e.g. a Codex tech lead (provider = "openai", runtime = "codex", model = "<model>") with a lower priority number
+# to try it first. Only enabled entries are used.
+schema_version = 1
+revision = 1
+
+[[entries]]
+id = "claude-sonnet-worker"
+provider = "anthropic"
+runtime = "claude-fabric"
+model = "sonnet"
+roles = ["worker"]
+capabilities = ["edit", "tests", "shell", "resume"]
+strengths = ["coding", "debugging", "multi-file integration", "unit tests"]
+enabled = true
+label = "Claude Sonnet - default worker"
+
+[[entries]]
+id = "claude-opus-worker"
+provider = "anthropic"
+runtime = "claude-fabric"
+model = "opus"
+roles = ["worker"]
+capabilities = ["edit", "tests", "shell", "resume"]
+strengths = ["complex implementation", "difficult debugging", "high ambiguity"]
+enabled = true
+label = "Claude Opus - worker for judgment-heavy jobs"
+
+[[entries]]
+id = "claude-opus-tech-lead"
+provider = "anthropic"
+runtime = "claude-fabric"
+model = "opus"
+roles = ["tech_lead"]
+capabilities = ["plan", "review"]
+strengths = ["decomposition", "integration review"]
+enabled = true
+label = "Claude Opus - tech lead"
+priority = 1

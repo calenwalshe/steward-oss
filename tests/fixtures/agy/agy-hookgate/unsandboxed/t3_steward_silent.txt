@@ -1,0 +1,7 @@
+=== t3_steward_silent 2026-10-04T13:18:33-0700
+$ scenario t3_steward_silent: AgyGate(answer_timeout_s=5); Steward never answers
+  permission_request agy-1-9577f31b Bash {"command": "touch steward-marker.txt", "cwd": "/home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688b -> (not answered)
+  agy step 2 run_command ERROR {"CommandLine": "touch steward-marker.txt"} tool call denied by pre-tool hook: steward gate: no answer from Steward within 5s
+  agy result status=SUCCESS denied_actions=None response='The command did not succeed. The tool execution was blocked by the pre-tool hook:\n\n```\ntool call denied by pre-tool hook: steward gate: no answer from Steward w'
+  done after 13.6s: {"turn_id": "t1", "status": "completed", "evidence_ref": "agy:b976dd17-f5ce-44e7-9e67-c3929ef1000e:t1"}
+  marker present: False

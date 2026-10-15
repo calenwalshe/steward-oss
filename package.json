@@ -1,0 +1,13 @@
+{
+  "name": "steward-pack-driver",
+  "version": "0.0.0",
+  "description": "Repo-root driver so a bare `npm pack` builds, audits and packs the real package into dist/. Ships nothing itself.",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "package.json"
+  ],
+  "scripts": {
+    "prepack": "python3 packaging/npm/steward_pack_build.py --pack"
+  }
+}

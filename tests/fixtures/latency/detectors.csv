@@ -1,0 +1,307 @@
+job,detector,ts,first_action,detect_to_action_s
+ec8b5913,heartbeat:suspect_stall,2026-09-28T21:19:36.744384+00:00,retry guidance authorized by diagnosis:,21.319
+ec8b5913,stall_diagnosis:retry_with_guidance,2026-09-28T21:19:58.054656+00:00,retry guidance authorized by diagnosis:,0.009
+ec8b5913,heartbeat:suspect_stall,2026-09-28T21:22:44.902479+00:00,nudge instruction recorded:cli,507.627
+ec8b5913,heartbeat:suspect_stall,2026-09-28T21:29:50.511764+00:00,nudge instruction recorded:cli,82.017
+d7e8cf20,heartbeat:suspect_stall,2026-09-28T22:38:55.831769+00:00,retry guidance authorized by diagnosis:,31.821
+d7e8cf20,stall_diagnosis:retry_with_guidance,2026-09-28T22:39:27.644415+00:00,retry guidance authorized by diagnosis:,0.008
+d7e8cf20,heartbeat:suspect_stall,2026-09-28T22:39:57.851598+00:00,operator stop:,3898.986
+d7e8cf20,trajectory_concern,2026-09-28T22:40:13.001351+00:00,operator stop:,3883.836
+c28fad3f,watcher:concern,2026-09-29T04:39:25.947929+00:00,none<2h,
+840ca812,heartbeat:suspect_stall,2026-09-29T16:50:47.152232+00:00,retry guidance authorized by diagnosis:,9.269
+840ca812,stall_diagnosis:retry_with_guidance,2026-09-29T16:50:56.412420+00:00,retry guidance authorized by diagnosis:,0.009
+840ca812,watcher:concern,2026-09-29T16:51:11.570924+00:00,focus instruction recorded:cli,676.036
+840ca812,watcher:concern,2026-09-29T16:51:11.584942+00:00,focus instruction recorded:cli,676.022
+840ca812,watcher:concern,2026-09-29T17:01:20.298975+00:00,focus instruction recorded:cli,67.308
+840ca812,watcher:concern,2026-09-29T17:01:20.314048+00:00,focus instruction recorded:cli,67.293
+840ca812,heartbeat:suspect_stall,2026-09-29T17:04:37.284131+00:00,nudge instruction recorded:watcher:coverage,423.301
+840ca812,trajectory_concern,2026-09-29T17:04:52.394975+00:00,nudge instruction recorded:watcher:coverage,408.19
+840ca812,watcher:concern,2026-09-29T17:11:40.629781+00:00,nudge instruction recorded:watcher:evidence,592.681
+840ca812,watcher:concern,2026-09-29T17:21:33.348660+00:00,retry guidance authorized by diagnosis:,1131.778
+840ca812,watcher:concern,2026-09-29T17:21:48.592614+00:00,retry guidance authorized by diagnosis:,1116.534
+840ca812,watcher:concern,2026-09-29T17:31:56.993733+00:00,retry guidance authorized by diagnosis:,508.133
+840ca812,heartbeat:suspect_stall,2026-09-29T17:40:19.170287+00:00,retry guidance authorized by diagnosis:,5.957
+840ca812,stall_diagnosis:retry_with_guidance,2026-09-29T17:40:25.118492+00:00,retry guidance authorized by diagnosis:,0.008
+840ca812,watcher:concern,2026-09-29T17:41:41.122514+00:00,focus instruction recorded:cli,1527.356
+840ca812,watcher:alarm,2026-09-29T17:42:11.547966+00:00,focus instruction recorded:cli,1496.93
+840ca812,watcher:alarm,2026-09-29T17:52:20.178990+00:00,focus instruction recorded:cli,888.299
+840ca812,watcher:alarm,2026-09-29T18:01:43.248054+00:00,focus instruction recorded:cli,325.23
+840ca812,watcher:alarm,2026-09-29T18:02:28.912282+00:00,focus instruction recorded:cli,279.566
+840ca812,watcher:concern,2026-09-29T18:12:34.949451+00:00,recovery escalated to human:,2258.169
+840ca812,watcher:concern,2026-09-29T18:21:53.450468+00:00,recovery escalated to human:,1699.668
+840ca812,watcher:concern,2026-09-29T18:22:38.642601+00:00,recovery escalated to human:,1654.476
+840ca812,watcher:concern,2026-09-29T18:32:57.892257+00:00,recovery escalated to human:,1035.226
+840ca812,watcher:concern,2026-09-29T18:42:15.079764+00:00,recovery escalated to human:,478.039
+840ca812,heartbeat:suspect_stall,2026-09-29T18:50:06.855232+00:00,recovery escalated to human:,6.263
+840ca812,stall_diagnosis:retry_with_guidance,2026-09-29T18:50:13.112304+00:00,recovery escalated to human:,0.006
+abc2a7d3,heartbeat:suspect_stall,2026-09-29T19:47:00.964574+00:00,retry guidance authorized by diagnosis:,9.997
+abc2a7d3,stall_diagnosis:retry_with_guidance,2026-09-29T19:47:10.953112+00:00,retry guidance authorized by diagnosis:,0.009
+a1c37c66,watcher:concern,2026-09-29T19:18:03.018663+00:00,none<2h,
+a1c37c66,watcher:concern,2026-09-29T19:28:37.275036+00:00,none<2h,
+d9e50a45,heartbeat:suspect_stall,2026-09-29T21:48:48.236572+00:00,retry guidance authorized by diagnosis:,8.53
+d9e50a45,stall_diagnosis:retry_with_guidance,2026-09-29T21:48:56.743977+00:00,retry guidance authorized by diagnosis:,0.023
+d9e50a45,heartbeat:suspect_stall,2026-09-29T21:54:32.357355+00:00,none<2h,
+d9e50a45,trajectory_concern,2026-09-29T21:54:47.779101+00:00,none<2h,
+06ea6a04,watcher:concern,2026-09-30T02:12:48.274634+00:00,none<2h,
+06ea6a04,watcher:concern,2026-09-30T02:53:40.375315+00:00,none<2h,
+06ea6a04,trajectory_concern,2026-09-30T04:11:11.122294+00:00,none<2h,
+06ea6a04,watcher:concern,2026-09-30T04:15:57.217112+00:00,none<2h,
+06ea6a04,watcher:alarm,2026-09-30T04:36:59.951951+00:00,none<2h,
+06ea6a04,watcher:alarm,2026-09-30T04:46:46.692254+00:00,none<2h,
+06ea6a04,watcher:concern,2026-09-30T04:57:43.247589+00:00,none<2h,
+06ea6a04,watcher:concern,2026-09-30T05:17:55.510213+00:00,none<2h,
+06ea6a04,watcher:alarm,2026-09-30T05:18:26.061578+00:00,none<2h,
+06ea6a04,jev_flag:stalled,2026-09-30T05:19:26.208419+00:00,none<2h,
+06ea6a04,watcher:alarm,2026-09-30T05:38:25.184237+00:00,none<2h,
+06ea6a04,watcher:concern,2026-09-30T05:47:50.216130+00:00,none<2h,
+06ea6a04,watcher:alarm,2026-09-30T05:59:03.709197+00:00,none<2h,
+06ea6a04,watcher:concern,2026-09-30T06:19:17.870016+00:00,none<2h,
+06ea6a04,watcher:concern,2026-09-30T06:19:33.355995+00:00,none<2h,
+06ea6a04,watcher:concern,2026-09-30T06:39:58.759415+00:00,none<2h,
+06ea6a04,watcher:concern,2026-09-30T07:00:38.304095+00:00,none<2h,
+06ea6a04,jev_flag:looping,2026-09-30T07:03:35.295172+00:00,none<2h,
+06ea6a04,jev_flag:looping,2026-09-30T07:08:35.507020+00:00,none<2h,
+06ea6a04,watcher:concern,2026-09-30T07:21:06.358727+00:00,none<2h,
+06ea6a04,watcher:alarm,2026-09-30T07:41:30.813599+00:00,none<2h,
+06ea6a04,watcher:concern,2026-09-30T07:52:45.790707+00:00,none<2h,
+06ea6a04,watcher:concern,2026-09-30T08:02:28.879103+00:00,none<2h,
+ed11ba3c,efficiency_finding,2026-09-30T15:17:13.215867+00:00,focus instruction recorded:cli,252.445
+ed11ba3c,trajectory_concern,2026-09-30T15:21:44.701255+00:00,none<2h,
+ed11ba3c,efficiency_finding,2026-09-30T15:22:30.569619+00:00,none<2h,
+ed11ba3c,efficiency_finding,2026-09-30T15:25:34.412325+00:00,none<2h,
+ed11ba3c,efficiency_finding,2026-09-30T15:33:46.184126+00:00,none<2h,
+ed11ba3c,efficiency_finding,2026-09-30T15:43:00.504829+00:00,none<2h,
+ed11ba3c,efficiency_finding,2026-09-30T15:53:14.141343+00:00,none<2h,
+ed11ba3c,efficiency_finding,2026-09-30T16:27:49.165476+00:00,none<2h,
+ed11ba3c,efficiency_finding,2026-09-30T18:02:31.537061+00:00,none<2h,
+02b1a95c,jev_flag:looping,2026-09-30T17:34:35.266078+00:00,none<2h,
+5e839897,trajectory_concern,2026-09-30T19:05:27.576503+00:00,none<2h,
+d3133717,jev_flag:finished,2026-09-30T19:46:23.083022+00:00,goal instruction recorded:cli,504.693
+d3133717,trajectory_concern,2026-09-30T19:46:48.655248+00:00,goal instruction recorded:cli,479.121
+d3133717,efficiency_finding,2026-09-30T19:47:34.540548+00:00,goal instruction recorded:cli,433.236
+8a641f9b,efficiency_finding,2026-09-30T19:40:18.554913+00:00,retry guidance authorized by diagnosis:,2627.786
+8a641f9b,watcher:concern,2026-09-30T20:00:57.168354+00:00,retry guidance authorized by diagnosis:,1389.172
+8a641f9b,watcher:concern,2026-09-30T20:10:57.506384+00:00,retry guidance authorized by diagnosis:,788.834
+8a641f9b,watcher:concern,2026-09-30T20:10:57.584834+00:00,retry guidance authorized by diagnosis:,788.756
+8a641f9b,watcher:concern,2026-09-30T20:21:14.436271+00:00,retry guidance authorized by diagnosis:,171.904
+8a641f9b,watcher:concern,2026-09-30T20:21:14.512639+00:00,retry guidance authorized by diagnosis:,171.828
+8a641f9b,heartbeat:suspect_stall,2026-09-30T20:23:49.598096+00:00,retry guidance authorized by diagnosis:,16.742
+8a641f9b,stall_diagnosis:retry_with_guidance,2026-09-30T20:24:06.320964+00:00,retry guidance authorized by diagnosis:,0.019
+8a641f9b,watcher:concern,2026-09-30T20:31:34.787811+00:00,none<2h,
+8a641f9b,watcher:concern,2026-09-30T20:31:50.182118+00:00,none<2h,
+8a641f9b,watcher:concern,2026-09-30T20:42:06.937048+00:00,operator pause:,6688.067
+8a641f9b,watcher:concern,2026-09-30T20:52:28.759018+00:00,operator pause:,6066.245
+8a641f9b,watcher:concern,2026-09-30T20:52:29.190946+00:00,operator pause:,6065.813
+8a641f9b,watcher:concern,2026-09-30T21:02:22.066707+00:00,operator pause:,5472.937
+8a641f9b,watcher:concern,2026-09-30T21:02:52.956365+00:00,operator pause:,5442.048
+8a641f9b,watcher:concern,2026-09-30T21:13:24.859671+00:00,operator pause:,4810.144
+8a641f9b,watcher:concern,2026-09-30T21:22:39.388710+00:00,operator pause:,4255.615
+8a641f9b,watcher:concern,2026-09-30T21:23:41.098707+00:00,operator pause:,4193.905
+8a641f9b,watcher:concern,2026-09-30T21:32:57.454021+00:00,operator pause:,3637.55
+8a641f9b,watcher:concern,2026-09-30T21:33:59.058764+00:00,operator pause:,3575.945
+8a641f9b,efficiency_finding,2026-09-30T21:43:34.137883+00:00,operator pause:,3000.866
+8a641f9b,watcher:concern,2026-09-30T21:44:04.904442+00:00,operator pause:,2970.1
+8a641f9b,watcher:concern,2026-09-30T21:54:20.775960+00:00,operator pause:,2354.228
+8a641f9b,watcher:concern,2026-09-30T22:04:39.898871+00:00,operator pause:,1735.105
+8a641f9b,watcher:concern,2026-09-30T22:15:04.942368+00:00,operator pause:,1110.062
+8a641f9b,efficiency_finding,2026-09-30T22:15:35.830828+00:00,operator pause:,1079.173
+8a641f9b,watcher:concern,2026-09-30T22:49:24.062450+00:00,none<2h,
+8a641f9b,efficiency_finding,2026-09-30T23:00:55.317064+00:00,none<2h,
+8a641f9b,heartbeat:suspect_stall,2026-09-30T23:01:10.678239+00:00,none<2h,
+e98c4fd8,efficiency_finding,2026-09-30T20:01:50.708398+00:00,focus instruction recorded:questions,4894.07
+e98c4fd8,efficiency_finding,2026-09-30T20:16:07.666521+00:00,focus instruction recorded:questions,4037.112
+e98c4fd8,efficiency_finding,2026-09-30T20:29:31.546553+00:00,focus instruction recorded:questions,3233.232
+e98c4fd8,efficiency_finding,2026-09-30T20:39:46.191739+00:00,focus instruction recorded:questions,2618.586
+e98c4fd8,efficiency_finding,2026-09-30T20:56:14.953484+00:00,focus instruction recorded:questions,1629.825
+e98c4fd8,efficiency_finding,2026-09-30T21:28:57.849068+00:00,operator pause:,3888.927
+e98c4fd8,watcher:concern,2026-09-30T21:33:35.501133+00:00,operator pause:,3611.275
+e98c4fd8,efficiency_finding,2026-09-30T21:36:40.093566+00:00,operator pause:,3426.683
+e98c4fd8,efficiency_finding,2026-09-30T22:24:02.326283+00:00,operator pause:,584.45
+e98c4fd8,trajectory_concern,2026-09-30T23:01:23.807071+00:00,nudge instruction recorded:steward,1335.301
+e98c4fd8,watcher:concern,2026-09-30T23:06:00.953164+00:00,nudge instruction recorded:steward,1058.155
+5217a365,jev_flag:done_unproven,2026-09-30T20:06:31.240988+00:00,nudge instruction recorded:steward,392.754
+5217a365,trajectory_concern,2026-09-30T20:06:55.466669+00:00,nudge instruction recorded:steward,368.528
+5217a365,efficiency_finding,2026-09-30T20:07:41.145169+00:00,nudge instruction recorded:steward,322.85
+11ed0088,jev_flag:finished,2026-09-30T20:29:35.388346+00:00,nudge instruction recorded:steward,209.825
+11ed0088,trajectory_concern,2026-09-30T20:30:01.330224+00:00,nudge instruction recorded:steward,183.883
+11ed0088,efficiency_finding,2026-09-30T20:30:47.460693+00:00,nudge instruction recorded:steward,137.752
+11ed0088,heartbeat:suspect_stall,2026-09-30T20:33:05.047514+00:00,nudge instruction recorded:steward,0.165
+11ed0088,stall_diagnosis:retry_with_guidance,2026-09-30T20:33:29.659685+00:00,retry guidance authorized by diagnosis:,0.009
+11ed0088,efficiency_finding,2026-09-30T20:34:00.416371+00:00,none<2h,
+5ac48751,jev_flag:hung_call,2026-09-30T21:07:45.870705+00:00,none<2h,
+d51bdf18,efficiency_finding,2026-09-30T21:25:57.370573+00:00,none<2h,
+d3477a2a,efficiency_finding,2026-09-30T21:07:29.565986+00:00,none<2h,
+d3477a2a,efficiency_finding,2026-09-30T21:31:09.412564+00:00,nudge instruction recorded:cli,6001.768
+d3477a2a,efficiency_finding,2026-09-30T21:31:09.416972+00:00,nudge instruction recorded:cli,6001.764
+d3477a2a,efficiency_finding,2026-09-30T22:25:06.212961+00:00,nudge instruction recorded:cli,2764.968
+d3477a2a,stall_diagnosis:retry_with_guidance,2026-10-01T00:52:03.147603+00:00,retry guidance authorized by diagnosis:,0.009
+d3477a2a,efficiency_finding,2026-10-01T00:52:03.335816+00:00,retry guidance authorized by diagnosis:,307.202
+d3477a2a,stall_diagnosis:retry_with_guidance,2026-10-01T00:57:10.524690+00:00,retry guidance authorized by diagnosis:,0.013
+d3477a2a,efficiency_finding,2026-10-01T00:59:13.767885+00:00,focus instruction recorded:steward,2481.596
+d3477a2a,watcher:concern,2026-10-01T01:42:38.473710+00:00,recovery escalated to human:,86.803
+d3477a2a,permission_stuck,2026-10-01T01:43:40.044039+00:00,recovery escalated to human:,25.233
+d3477a2a,jev_flag:hung_call,2026-10-01T01:43:55.911870+00:00,recovery escalated to human:,9.365
+d3477a2a,stall_diagnosis:retry_with_guidance,2026-10-01T01:44:05.268394+00:00,recovery escalated to human:,0.008
+d3477a2a,permission_stuck,2026-10-01T01:51:00.154317+00:00,focus instruction recorded:steward,603.234
+a5f12c06,efficiency_finding,2026-09-30T23:38:25.754083+00:00,none<2h,
+ab83bf58,jev_flag:finished,2026-09-30T23:51:20.838181+00:00,none<2h,
+ab83bf58,jev_flag:finished,2026-09-30T23:57:53.766078+00:00,none<2h,
+ab83bf58,efficiency_finding,2026-10-01T00:01:56.435039+00:00,none<2h,
+ab83bf58,jev_flag:finished,2026-10-01T00:03:04.014965+00:00,none<2h,
+ab83bf58,heartbeat:suspect_stall,2026-10-01T00:07:20.157044+00:00,none<2h,
+af0a5926,efficiency_finding,2026-10-01T00:25:34.050337+00:00,goal instruction recorded:steer-agent,16.05
+64d8bbf7,efficiency_finding,2026-10-01T02:08:10.872271+00:00,none<2h,
+66a8d195,trajectory_concern,2026-10-01T02:18:07.011377+00:00,none<2h,
+66a8d195,efficiency_finding,2026-10-01T02:18:12.784326+00:00,none<2h,
+a1c9f962,efficiency_finding,2026-10-01T02:21:42.862924+00:00,none<2h,
+648d10ca,trajectory_concern,2026-10-01T02:58:34.953058+00:00,none<2h,
+648d10ca,efficiency_finding,2026-10-01T02:59:21.281191+00:00,none<2h,
+cc94b4b4,watcher:concern,2026-10-01T04:19:41.738230+00:00,none<2h,
+cc94b4b4,efficiency_finding,2026-10-01T04:20:12.141745+00:00,none<2h,
+8227ea0d,efficiency_finding,2026-10-01T05:03:27.544801+00:00,nudge instruction recorded:steward,550.201
+8227ea0d,jev_flag:finished,2026-10-01T05:12:48.009843+00:00,none<2h,
+8227ea0d,trajectory_concern,2026-10-01T05:13:12.895707+00:00,none<2h,
+88ad60fb,trajectory_concern,2026-10-01T05:38:14.305435+00:00,nudge instruction recorded:steward,371.477
+9b80894e,efficiency_finding,2026-10-01T06:03:13.091946+00:00,none<2h,
+695d22cf,trajectory_concern,2026-10-01T06:19:04.865967+00:00,none<2h,
+695d22cf,efficiency_finding,2026-10-01T06:19:20.428883+00:00,none<2h,
+cfee71a8,jev_flag:finished,2026-10-01T06:36:10.350329+00:00,none<2h,
+f3940703,efficiency_finding,2026-10-01T19:51:53.456189+00:00,nudge instruction recorded:job-chat,156.286
+79076b88,trajectory_concern,2026-10-01T20:29:31.314743+00:00,none<2h,
+f4a2176b,efficiency_finding,2026-10-01T21:37:23.921107+00:00,none<2h,
+aa585623,efficiency_finding,2026-10-02T00:21:52.381049+00:00,nudge instruction recorded:steward,304.357
+0affdf72,trajectory_concern,2026-10-02T00:46:30.520639+00:00,none<2h,
+0affdf72,efficiency_finding,2026-10-02T00:47:16.294603+00:00,none<2h,
+4a493157,efficiency_finding,2026-10-02T02:25:16.303309+00:00,nudge instruction recorded:steward,1686.268
+6bfd208c,jev_flag:looping,2026-10-02T04:24:25.505059+00:00,none<2h,
+6bfd208c,efficiency_finding,2026-10-02T04:25:47.649985+00:00,none<2h,
+a6915c05,efficiency_finding,2026-10-02T05:07:36.250929+00:00,nudge instruction recorded:steward,1360.588
+a6915c05,efficiency_finding,2026-10-02T06:14:13.048481+00:00,nudge instruction recorded:steward,1939.086
+a6915c05,efficiency_finding,2026-10-02T06:15:14.611509+00:00,nudge instruction recorded:steward,1877.523
+a6915c05,efficiency_finding,2026-10-02T06:15:14.615802+00:00,nudge instruction recorded:steward,1877.518
+4e9ffb50,efficiency_finding,2026-10-02T05:54:20.891764+00:00,none<2h,
+b76b3bc9,trajectory_concern,2026-10-02T00:46:45.576075+00:00,none<2h,
+b76b3bc9,efficiency_finding,2026-10-02T00:47:16.062517+00:00,none<2h,
+d01e9e12,efficiency_finding,2026-10-02T00:54:03.360970+00:00,none<2h,
+90762084,trajectory_concern,2026-10-02T01:09:09.106589+00:00,none<2h,
+90762084,efficiency_finding,2026-10-02T01:09:24.541147+00:00,none<2h,
+811fa535,efficiency_finding,2026-10-02T01:30:45.594831+00:00,nudge instruction recorded:steward,506.226
+183b5ad5,efficiency_finding,2026-10-02T02:25:54.033232+00:00,focus instruction recorded:unblock-agent,400.746
+665d3c3e,efficiency_finding,2026-10-02T02:42:59.221396+00:00,none<2h,
+7819c894,trajectory_concern,2026-10-02T03:14:45.949429+00:00,none<2h,
+4243ab30,trajectory_concern,2026-10-02T03:06:54.885418+00:00,none<2h,
+4243ab30,efficiency_finding,2026-10-02T03:07:40.527464+00:00,none<2h,
+1769f6c4,efficiency_finding,2026-10-02T04:52:24.696810+00:00,none<2h,
+44918136,trajectory_concern,2026-10-02T06:57:25.697393+00:00,none<2h,
+44918136,efficiency_finding,2026-10-02T07:09:50.368824+00:00,none<2h,
+bae8949d,efficiency_finding,2026-10-02T06:50:07.785141+00:00,none<2h,
+35348c6a,efficiency_finding,2026-10-02T09:30:19.221479+00:00,retry guidance authorized by diagnosis:,2187.551
+35348c6a,heartbeat:suspect_stall,2026-10-02T10:06:37.224031+00:00,retry guidance authorized by diagnosis:,9.548
+35348c6a,stall_diagnosis:retry_with_guidance,2026-10-02T10:06:46.763184+00:00,retry guidance authorized by diagnosis:,0.009
+35348c6a,trajectory_concern,2026-10-02T10:08:21.304118+00:00,none<2h,
+48467a09,trajectory_concern,2026-10-02T10:23:46.377938+00:00,nudge instruction recorded:cli,64.936
+48467a09,efficiency_finding,2026-10-02T10:24:32.609054+00:00,nudge instruction recorded:cli,18.705
+48467a09,efficiency_finding,2026-10-02T10:28:38.793687+00:00,retry guidance authorized by diagnosis:,1598.31
+48467a09,heartbeat:suspect_stall,2026-10-02T10:55:06.965562+00:00,retry guidance authorized by diagnosis:,10.138
+48467a09,stall_diagnosis:retry_with_guidance,2026-10-02T10:55:17.093859+00:00,retry guidance authorized by diagnosis:,0.01
+48467a09,heartbeat:suspect_stall,2026-10-02T11:32:16.051725+00:00,retry guidance authorized by diagnosis:,9.406
+48467a09,stall_diagnosis:retry_with_guidance,2026-10-02T11:32:25.449608+00:00,retry guidance authorized by diagnosis:,0.008
+48467a09,jev_flag:stalled,2026-10-02T11:56:37.167528+00:00,none<2h,
+01754257,trajectory_concern,2026-10-02T12:00:23.927798+00:00,nudge instruction recorded:cli,0.473
+01754257,efficiency_finding,2026-10-02T12:00:54.637632+00:00,retry guidance authorized by diagnosis:,2135.854
+01754257,efficiency_finding,2026-10-02T12:10:08.868545+00:00,retry guidance authorized by diagnosis:,1581.623
+01754257,heartbeat:suspect_stall,2026-10-02T12:36:18.995855+00:00,retry guidance authorized by diagnosis:,11.496
+01754257,stall_diagnosis:retry_with_guidance,2026-10-02T12:36:30.450420+00:00,retry guidance authorized by diagnosis:,0.041
+01754257,trajectory_concern,2026-10-02T12:38:03.424513+00:00,none<2h,
+01754257,jev_flag:stalled,2026-10-02T12:38:11.256274+00:00,none<2h,
+37be513e,watcher:concern,2026-10-02T12:55:20.732184+00:00,nudge instruction recorded:cli,59.427
+37be513e,trajectory_concern,2026-10-02T12:56:45.530435+00:00,nudge instruction recorded:cli,59.935
+37be513e,efficiency_finding,2026-10-02T12:57:16.229924+00:00,nudge instruction recorded:cli,29.236
+37be513e,efficiency_finding,2026-10-02T13:21:58.904017+00:00,retry guidance authorized by diagnosis:,3466.673
+37be513e,efficiency_finding,2026-10-02T14:03:11.865992+00:00,retry guidance authorized by diagnosis:,993.711
+37be513e,efficiency_finding,2026-10-02T14:13:30.824433+00:00,retry guidance authorized by diagnosis:,374.753
+37be513e,heartbeat:suspect_stall,2026-10-02T14:19:30.419189+00:00,retry guidance authorized by diagnosis:,15.158
+37be513e,stall_diagnosis:retry_with_guidance,2026-10-02T14:19:45.554988+00:00,retry guidance authorized by diagnosis:,0.022
+37be513e,heartbeat:suspect_stall,2026-10-02T14:52:34.251550+00:00,retry guidance authorized by diagnosis:,11.055
+37be513e,stall_diagnosis:retry_with_guidance,2026-10-02T14:52:45.298107+00:00,retry guidance authorized by diagnosis:,0.008
+37be513e,jev_flag:stalled,2026-10-02T14:54:25.546574+00:00,none<2h,
+d22d6633,efficiency_finding,2026-10-02T15:14:09.281263+00:00,nudge instruction recorded:cli,55.071
+d22d6633,trajectory_concern,2026-10-02T15:17:15.897060+00:00,nudge instruction recorded:cli,1234.961
+d22d6633,watcher:concern,2026-10-02T16:10:53.089281+00:00,retry guidance authorized by diagnosis:,1498.878
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:35:42.611427+00:00,retry guidance authorized by diagnosis:,9.356
+d22d6633,stall_diagnosis:retry_with_guidance,2026-10-02T16:35:51.946782+00:00,retry guidance authorized by diagnosis:,0.02
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:37:25.345703+00:00,retry guidance authorized by diagnosis:,949.924
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:47:45.080737+00:00,retry guidance authorized by diagnosis:,330.188
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:53:05.399790+00:00,retry guidance authorized by diagnosis:,9.869
+d22d6633,stall_diagnosis:retry_with_guidance,2026-10-02T16:53:15.260186+00:00,retry guidance authorized by diagnosis:,0.009
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:53:31.028551+00:00,nudge instruction recorded:unblock-agent,686.058
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:53:46.451630+00:00,nudge instruction recorded:unblock-agent,670.635
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:54:01.812364+00:00,nudge instruction recorded:unblock-agent,655.274
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:54:17.863395+00:00,nudge instruction recorded:unblock-agent,639.223
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:54:33.313196+00:00,nudge instruction recorded:unblock-agent,623.773
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:54:48.807247+00:00,nudge instruction recorded:unblock-agent,608.279
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:55:04.154481+00:00,nudge instruction recorded:unblock-agent,592.932
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:55:19.635314+00:00,nudge instruction recorded:unblock-agent,577.451
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:55:35.071744+00:00,nudge instruction recorded:unblock-agent,562.014
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:55:50.504435+00:00,nudge instruction recorded:unblock-agent,546.582
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:56:05.940722+00:00,nudge instruction recorded:unblock-agent,531.145
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:56:21.278460+00:00,nudge instruction recorded:unblock-agent,515.808
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:56:36.823649+00:00,nudge instruction recorded:unblock-agent,500.263
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:56:52.188082+00:00,nudge instruction recorded:unblock-agent,484.898
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:57:07.683026+00:00,nudge instruction recorded:unblock-agent,469.403
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:57:23.025312+00:00,nudge instruction recorded:unblock-agent,454.061
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:57:38.575188+00:00,nudge instruction recorded:unblock-agent,438.511
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:57:53.942473+00:00,nudge instruction recorded:unblock-agent,423.144
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:58:09.457667+00:00,nudge instruction recorded:unblock-agent,407.629
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:58:24.800185+00:00,nudge instruction recorded:unblock-agent,392.286
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:58:40.490491+00:00,nudge instruction recorded:unblock-agent,376.596
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:58:56.431515+00:00,nudge instruction recorded:unblock-agent,360.655
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:59:12.086661+00:00,nudge instruction recorded:unblock-agent,345.0
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:59:27.520485+00:00,nudge instruction recorded:unblock-agent,329.566
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:59:42.961676+00:00,nudge instruction recorded:unblock-agent,314.124
+d22d6633,heartbeat:suspect_stall,2026-10-02T16:59:58.412694+00:00,nudge instruction recorded:unblock-agent,298.673
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:00:13.906130+00:00,nudge instruction recorded:unblock-agent,283.18
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:00:29.400249+00:00,nudge instruction recorded:unblock-agent,267.686
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:00:44.839314+00:00,nudge instruction recorded:unblock-agent,252.247
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:01:00.521267+00:00,nudge instruction recorded:unblock-agent,236.565
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:01:15.978704+00:00,nudge instruction recorded:unblock-agent,221.107
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:01:31.312030+00:00,nudge instruction recorded:unblock-agent,205.774
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:01:46.874623+00:00,nudge instruction recorded:unblock-agent,190.212
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:02:02.209980+00:00,nudge instruction recorded:unblock-agent,174.876
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:02:17.656412+00:00,nudge instruction recorded:unblock-agent,159.43
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:02:32.976359+00:00,nudge instruction recorded:unblock-agent,144.11
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:02:50.964051+00:00,nudge instruction recorded:unblock-agent,126.122
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:03:06.384187+00:00,nudge instruction recorded:unblock-agent,110.702
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:03:21.873127+00:00,nudge instruction recorded:unblock-agent,95.213
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:03:37.997494+00:00,nudge instruction recorded:unblock-agent,79.089
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:03:53.428290+00:00,nudge instruction recorded:unblock-agent,63.658
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:04:09.078617+00:00,nudge instruction recorded:unblock-agent,48.008
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:04:24.404026+00:00,nudge instruction recorded:unblock-agent,32.682
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:04:39.880404+00:00,nudge instruction recorded:unblock-agent,17.206
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:04:55.362397+00:00,nudge instruction recorded:unblock-agent,1.724
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:05:11.076777+00:00,recovery escalated to human:,302.542
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:05:26.575569+00:00,recovery escalated to human:,287.043
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:05:41.924705+00:00,recovery escalated to human:,271.694
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:05:57.484281+00:00,recovery escalated to human:,256.134
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:06:12.819372+00:00,recovery escalated to human:,240.799
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:06:28.319539+00:00,recovery escalated to human:,225.299
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:06:43.702627+00:00,recovery escalated to human:,209.916
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:06:59.325721+00:00,recovery escalated to human:,194.293
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:07:14.681748+00:00,recovery escalated to human:,178.937
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:07:30.181240+00:00,recovery escalated to human:,163.438
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:07:45.515926+00:00,recovery escalated to human:,148.103
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:08:01.235828+00:00,recovery escalated to human:,132.383
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:08:16.712428+00:00,recovery escalated to human:,116.906
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:08:32.195120+00:00,recovery escalated to human:,101.424
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:08:47.719701+00:00,recovery escalated to human:,85.899
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:09:03.182077+00:00,recovery escalated to human:,70.437
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:09:18.683817+00:00,recovery escalated to human:,54.935
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:09:34.034211+00:00,recovery escalated to human:,39.585
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:09:49.520195+00:00,recovery escalated to human:,24.099
+d22d6633,heartbeat:suspect_stall,2026-10-02T17:10:05.003038+00:00,recovery escalated to human:,8.616
+d22d6633,stall_diagnosis:retry_with_guidance,2026-10-02T17:10:13.608295+00:00,recovery escalated to human:,0.01
+3bdc73e1,efficiency_finding,2026-10-02T08:30:30.104516+00:00,nudge instruction recorded:cli,330.391
+3bdc73e1,efficiency_finding,2026-10-02T08:40:52.933741+00:00,none<2h,
+103562ff,efficiency_finding,2026-10-02T16:20:15.476429+00:00,none<2h,
+dd5f4266,trajectory_concern,2026-10-02T16:28:38.593342+00:00,goal instruction recorded:cli,569.357
+dd5f4266,efficiency_finding,2026-10-02T16:28:46.943390+00:00,goal instruction recorded:cli,561.007

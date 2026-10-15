@@ -1,0 +1,26 @@
+# Trajectory supervision settings, written by `steward init` (Steward {version}).
+# This file is yours: Steward never overwrites it (a changed template is written beside it as .new).
+
+# "shadow" records reviews without acting on them; "off" disables them.
+mode = "shadow"
+
+# How long a piece of review advice stays fresh, in seconds.
+# advice_ttl_s = 900
+
+# At most this many trajectory reviews per job.
+# max_reviews_per_job = 12
+
+# Spend limit for supervision itself, in US dollars.
+# supervision_budget_usd = 5.0
+
+# [triggers]
+# cadence_s = 2700          # regular review interval
+# min_gap_s = 600           # never review twice within this gap
+# settle_s = 1800           # wait after a redirect before judging it
+# diff_growth_ratio = 2.0   # review when the diff grows by this factor
+# time_marks_s = [10800, 14400]
+
+# [hysteresis]
+# min_redirect_confidence = 0.6
+# obvious_confidence = 0.9
+# concern_expiry_reviews = 2

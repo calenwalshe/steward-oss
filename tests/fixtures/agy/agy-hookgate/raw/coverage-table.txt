@@ -1,0 +1,113 @@
+== c1: 9 tool steps, 3 hook calls
+  step   2 write_to_file                ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+  step   4 replace_file_content         ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+  step   6 multi_replace_file_content   ERROR hook=NO  unknown tool: "multi_replace_file_content" — check spelling
+  step   8 sed_file                     ERROR hook=NO  unknown tool: "sed_file" — check spelling
+  step  10 notebook_edit                ERROR hook=NO  unknown tool: "notebook_edit" — check spelling
+  step  12 view_file                    ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+  step  14 list_dir                     ERROR hook=NO  unknown tool: "list_dir" — check spelling
+  step  16 grep_search                  ERROR hook=NO  unknown tool: "grep_search" — check spelling
+  step  18 find_by_name                 ERROR hook=NO  unknown tool: "find_by_name" — check spelling
+== c2: 5 tool steps, 5 hook calls
+  step   2 run_command                  ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+  step   4 run_command                  ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+  step   6 manage_task                  ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+  step   8 manage_task                  ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+  step  10 run_command                  ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+== c3: 6 tool steps, 2 hook calls
+  step   2 read_url_content             ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+  step   4 search_web                   ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+  step   6 open_browser_url             ERROR hook=NO  unknown tool: "open_browser_url" — check spelling
+  step   8 read_browser_page            ERROR hook=NO  unknown tool: "read_browser_page" — check spelling
+  step  10 capture_browser_screenshot   ERROR hook=NO  unknown tool: "capture_browser_screenshot" — check spelling
+  step  12 browser_subagent             ERROR hook=NO  unknown tool: "browser_subagent" — check spelling
+== c4: 1 tool steps, 1 hook calls
+  step   2 call_mcp_tool                ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+== c4-allow: 1 tool steps, 1 hook calls
+  step   2 call_mcp_tool                DONE  hook=YES 
+== c5: 36 tool steps, 37 hook calls
+  step   2 define_subagent              DONE  hook=YES 
+  step   6 view_file                    DONE  hook=YES 
+  step   8 view_file                    DONE  hook=YES 
+  step  10 view_file                    ERROR hook=YES declaring permissions: cortex tool view_file: convert tool call for pe
+  step  12 view_file                    DONE  hook=YES 
+  step  14 view_file                    DONE  hook=YES 
+  step  16 view_file                    DONE  hook=YES 
+  step  18 view_file                    DONE  hook=YES 
+  step  20 run_command                  DONE  hook=YES 
+  step  22 manage_task                  DONE  hook=YES 
+  step  26 run_command                  DONE  hook=YES 
+  step  28 run_command                  DONE  hook=YES 
+  step  30 view_file                    DONE  hook=YES 
+  step  32 run_command                  DONE  hook=YES 
+  step  34 run_command                  ERROR hook=YES tool call denied by pre-tool hook: steward gate: marker denied
+  step  36 run_command                  DONE  hook=YES 
+  step  38 run_command                  DONE  hook=YES 
+  step  40 view_file                    DONE  hook=YES 
+  step  42 run_command                  DONE  hook=YES 
+  step  44 view_file                    DONE  hook=YES 
+  step  46 view_file                    DONE  hook=YES 
+  step  48 view_file                    DONE  hook=YES 
+  step  50 run_command                  DONE  hook=YES 
+  step  52 run_command                  DONE  hook=YES 
+  step  54 run_command                  DONE  hook=YES 
+  step  56 run_command                  DONE  hook=YES 
+  step  58 run_command                  DONE  hook=YES 
+  step  60 run_command                  DONE  hook=YES 
+  step  62 run_command                  DONE  hook=YES 
+  step  64 run_command                  DONE  hook=YES 
+  step  66 view_file                    DONE  hook=YES 
+  step  68 view_file                    DONE  hook=YES 
+  step  70 view_file                    DONE  hook=YES 
+  step  72 view_file                    DONE  hook=YES 
+  step  74 view_file                    DONE  hook=YES 
+  step  76 run_command                  DONE  hook=YES 
+  hook calls without a terminal tool step: {4: ['invoke_subagent']}
+== c6: 15 tool steps, 4 hook calls
+  step   2 generate_image               ERROR hook=NO  unknown tool: "generate_image" — check spelling
+  step   4 schedule                     ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+  step   6 manage_task                  ERROR hook=NO  invalid arguments:
+- at '/Action': value must be one of 'list', 'kill'
+  step   8 send_message                 ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+  step  10 run_workflow                 ERROR hook=NO  unknown tool: "run_workflow" — check spelling
+  step  12 notebook_execution           ERROR hook=NO  unknown tool: "notebook_execution" — check spelling
+  step  14 delete_knowledge             ERROR hook=NO  unknown tool: "delete_knowledge" — check spelling
+  step  16 list_permissions             ERROR hook=NO  unknown tool: "list_permissions" — check spelling
+  step  18 list_resources               ERROR hook=NO  unknown tool: "list_resources" — check spelling
+  step  20 search_marketplace           ERROR hook=NO  unknown tool: "search_marketplace" — check spelling
+  step  22 manage_inbox                 ERROR hook=NO  unknown tool: "manage_inbox" — check spelling
+  step  24 manage_subagents             ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+  step  26 define_subagent              ERROR hook=YES tool call denied by pre-tool hook: steward gate: denied
+  step  28 list_plugin_accounts         ERROR hook=NO  unknown tool: "list_plugin_accounts" — check spelling
+  step  30 wait_5_seconds               ERROR hook=NO  unknown tool: "wait_5_seconds" — check spelling
+== c7: 15 tool steps, 1 hook calls
+  step   2 command_status               ERROR hook=NO  unknown tool: "command_status" — check spelling
+  step   4 send_command_input           ERROR hook=NO  unknown tool: "send_command_input" — check spelling
+  step   8 ask_permission               ERROR hook=NO  unknown tool: "ask_permission" — check spelling
+  step  10 ask_custom_permission        ERROR hook=NO  unknown tool: "ask_custom_permission" — check spelling
+  step  12 wait                         ERROR hook=NO  unknown tool: "wait" — check spelling
+  step  14 wait_5_seconds               ERROR hook=NO  unknown tool: "wait_5_seconds" — check spelling
+  step  16 list_plugin_accounts         ERROR hook=NO  unknown tool: "list_plugin_accounts" — check spelling
+  step  18 read_resource                ERROR hook=NO  unknown tool: "read_resource" — check spelling
+  step  20 list_browser_pages           ERROR hook=NO  unknown tool: "list_browser_pages" — check spelling
+  step  22 browser_get_dom              ERROR hook=NO  unknown tool: "browser_get_dom" — check spelling
+  step  24 execute_browser_javascript   ERROR hook=NO  unknown tool: "execute_browser_javascript" — check spelling
+  step  26 capture_browser_console_logs ERROR hook=NO  unknown tool: "capture_browser_console_logs" — check spelling
+  step  28 click_browser_pixel          ERROR hook=NO  unknown tool: "click_browser_pixel" — check spelling
+  step  30 browser_press_key            ERROR hook=NO  unknown tool: "browser_press_key" — check spelling
+  step  32 browser_input                ERROR hook=NO  unknown tool: "browser_input" — check spelling
+  hook calls without a terminal tool step: {6: ['ask_question']}
+== c8: 13 tool steps, 0 hook calls
+  step   2 browser_click_element        ERROR hook=NO  unknown tool: "browser_click_element" — check spelling
+  step   4 browser_scroll               ERROR hook=NO  unknown tool: "browser_scroll" — check spelling
+  step   6 browser_refresh_page         ERROR hook=NO  unknown tool: "browser_refresh_page" — check spelling
+  step   8 browser_resize_window        ERROR hook=NO  unknown tool: "browser_resize_window" — check spelling
+  step  10 browser_select_option        ERROR hook=NO  unknown tool: "browser_select_option" — check spelling
+  step  12 browser_list_network_requests ERROR hook=NO  unknown tool: "browser_list_network_requests" — check spelling
+  step  14 browser_get_network_request  ERROR hook=NO  unknown tool: "browser_get_network_request" — check spelling
+  step  16 browser_move_mouse           ERROR hook=NO  unknown tool: "browser_move_mouse" — check spelling
+  step  18 browser_mouse_down           ERROR hook=NO  unknown tool: "browser_mouse_down" — check spelling
+  step  20 browser_mouse_up             ERROR hook=NO  unknown tool: "browser_mouse_up" — check spelling
+  step  22 browser_drag_pixel_to_pixel  ERROR hook=NO  unknown tool: "browser_drag_pixel_to_pixel" — check spelling
+  step  24 browser_scroll_dom           ERROR hook=NO  unknown tool: "browser_scroll_dom" — check spelling
+  step  26 finish                       ERROR hook=NO  unknown tool: "finish" — check spelling

@@ -1,0 +1,10 @@
+=== t2_approve 2026-10-04T13:18:34-0700
+$ scenario t2_approve: AgyStreamAdapter(gate_dir=/home/user/.cache/steward-proof/home/agy-gate/proof/t2_approve).start('Run the shell command `touch steward-marker.txt` in the current directory and report whether it succeeded.', /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/proof-ws/t2_approve)
+  started agy:91237b86-0c85-4edd-b256-faf6e07921d7; agy HOME=/home/user/.cache/steward-proof/home/agy-gate/proof/t2_approve/home; hook name=steward-gate-d3a056c0fd3b83c023d4cb1b6d5e6ca4
+  permission_request agy-1-c2a79c2a Bash {"command": "touch steward-marker.txt", "cwd": "/home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/proof-ws/t2_ap -> answer_prompt(True) = approved
+  agy step 2 run_command DONE {"CommandLine": "touch steward-marker.txt"} 
+  agy result status=SUCCESS denied_actions=None response='The command `touch steward-marker.txt` executed successfully (exit code `0`), creating [steward-marker.txt](file:///home/user/.local/state/steward/worktrees/c0'
+  done: {"turn_id": "t1", "status": "completed", "evidence_ref": "agy:91237b86-0c85-4edd-b256-faf6e07921d7:t1"}
+  gate hard-denied without asking: []
+  elapsed 8.0s; workspace files: ['seed.txt', 'steward-marker.txt']
+  marker present: True

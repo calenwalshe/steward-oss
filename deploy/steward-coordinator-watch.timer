@@ -1,0 +1,11 @@
+# Fires steward-coordinator-watch.service every 5 minutes. Install lines are in steward-coordinator.service.
+
+[Unit]
+Description=Steward coordinator silence watch (every 5 min)
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,10 @@
+=== t1_deny 2026-10-04T13:32:11-0700
+$ scenario t1_deny: AgyStreamAdapter(gate_dir=/home/user/.cache/steward-proof/home/agy-gate/proof/t1_deny).start('Run the shell command `touch steward-marker.txt` in the current directory and report whether it succeeded.', /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/proof-ws/t1_deny)
+  started agy:e04fac83-4b6f-4fa6-9976-118629f36e3f; agy HOME=/home/user/.cache/steward-proof/home/agy-gate/proof/t1_deny/home; hook name=steward-gate-89cc70df6cf3d25f33b2fd45cceb0b56
+  permission_request agy-1-7f25442b Bash {"command": "touch steward-marker.txt", "cwd": "/home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/proof-ws/t1_de -> answer_prompt(False) = denied
+  agy step 2 run_command ERROR {"CommandLine": "touch steward-marker.txt"} tool call denied by pre-tool hook: denied by Steward
+  agy result status=SUCCESS denied_actions=None response='The shell command `touch steward-marker.txt` did **not** succeed. The execution was denied by a pre-tool hook:\n\n```\ntool call denied by pre-tool hook: denied by'
+  done: {"turn_id": "t1", "status": "completed", "evidence_ref": "agy:e04fac83-4b6f-4fa6-9976-118629f36e3f:t1"}
+  gate hard-denied without asking: []
+  elapsed 5.9s; workspace files: ['seed.txt']
+  marker present: False

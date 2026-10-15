@@ -1,0 +1,25 @@
+# Steward configuration, written by `steward init` (Steward {version}).
+# This file is yours: Steward never overwrites it. When a new version ships a changed template,
+# the new text is written beside this file as steward.toml.new and you choose what to take.
+
+# Config schema version. Migrations read this; leave it alone.
+schema = 1
+
+# Who accepts finished work. "auto" (the default): when the checks pass, Steward accepts and merges the work
+# into the job's branch target on its own; risky actions and merge conflicts still come to you.
+# "human": passing checks are shown to you and you accept each job.
+acceptance = "auto"
+
+[owner]
+# How workers and prompts refer to you.
+name = "{owner_name}"
+# pronouns = "they/them/their"
+
+[jev]
+# The optional Jev observer (needs a TypeSafe account: TYPESAFE_API_KEY). Off by default;
+# `steward enable jev` asks for the key and sets "shadow" (records advice only).
+mode = "off"
+
+[alerts]
+# Telegram alerts for failures and recoveries (needs the `tg` command). Off until you turn it on.
+telegram = false

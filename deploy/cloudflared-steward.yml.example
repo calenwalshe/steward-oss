@@ -1,0 +1,12 @@
+# ~/.cloudflared/steward-mcp.yml  (copy, replace <TUNNEL_ID>, chmod 600)
+# Named tunnel `steward-mcp`. Exactly one public hostname; everything else 404s
+# at the edge. cloudflared forwards the original Host header and adds
+# CF-Connecting-IP, which steward-mcp uses (trust_forwarded) for rate limits.
+tunnel: <TUNNEL_ID>
+credentials-file: /home/user/.cloudflared/<TUNNEL_ID>.json
+no-autoupdate: true
+
+ingress:
+  - hostname: steward-mcp.example.org
+    service: http://127.0.0.1:9520
+  - service: http_status:404

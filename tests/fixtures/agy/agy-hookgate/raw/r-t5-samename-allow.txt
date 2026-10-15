@@ -1,0 +1,11 @@
+$ cd /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/ws-t5-samename-allow && echo '{"event": "user", "message": {"role": "user", "content": "Run the shell command `touch steward-marker.txt` and report whether it succeeded."}}' | HOME=/home/user/.cache/steward-proof/agyhomes/t5-samename-allow agy --input-format stream-json --output-format stream-json -p= --log-file /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/t5-samename-allow.log
+rc=0 elapsed=6.2s
+{"event": "step_update", "step_update": {"conversation_id": "5b52a083-d97d-498d-a997-db57df72f021", "step_index": 2, "state": "ACTIVE", "step_type": "tool", "tool_name": "run_command", "tool_info": {"name": "run_command", "parameters": {"CommandLine": "touch steward-marker.txt"}}}}
+{"event": "step_update", "step_update": {"conversation_id": "5b52a083-d97d-498d-a997-db57df72f021", "step_index": 2, "state": "ERROR", "step_type": "tool", "tool_name": "run_command", "duration_seconds": 0.057445589, "tool_info": {"name": "run_command", "parameters": {"CommandLine": "touch steward-marker.txt"}, "error": {"type": "TOOL_ERROR", "message": "tool call denied by pre-tool hook: steward gate: denied"}}}}
+{"event": "result", "result": {"conversation_id": "5b52a083-d97d-498d-a997-db57df72f021", "status": "SUCCESS", "response": "The command `touch steward-marker.txt` did **not** succeed. It was blocked by a pre-tool hook:\n\n```\nEncountered error in tool execution: tool call denied by pre-tool hook: steward gate: denied\n```\n", "duration_seconds": 4.508773564, "num_turns": 1, "usage": {"input_tokens": 24304, "output_tokens": 684, "thinking_tokens": 517, "cache_read_tokens": 0, "total_tokens": 24988}}}
+--- stderr:
+
+--- steward hook calls: ['deny']
+    {"args": {"CommandLine": "touch steward-marker.txt", "Cwd": "/home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/ws-t5-samename-allow", "WaitMsBeforeAsync": 5000, "toolAction": "Running touch command", "toolSummary": "Run touch command"}, "name": "run_co
+--- workspace hook calls: ['allow']
+--- workspace files: ['.agents/hook-calls.txt', '.agents/hook-in-391027.json', '.agents/hook.sh', '.agents/hooks.json', 'seed.txt']

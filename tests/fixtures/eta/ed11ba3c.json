@@ -1,0 +1,458 @@
+{
+ "attempts": [
+  {
+   "at": 1790781371.852919,
+   "no": 1,
+   "rework": false
+  },
+  {
+   "at": 1790781686.31067,
+   "no": 2,
+   "rework": true
+  }
+ ],
+ "base": {
+  "files": [
+   ".planning/phases/01-durable-core/01-01-PLAN.md",
+   ".planning/phases/01-durable-core/01-01-SUMMARY.md",
+   ".planning/phases/02-discovery-contract/02-01-PLAN.md",
+   ".planning/phases/02-discovery-contract/02-01-SUMMARY.md",
+   ".planning/phases/03-worker-steering/03-01-PLAN.md",
+   ".planning/phases/03-worker-steering/03-01-SUMMARY.md",
+   ".planning/phases/04-watch-recover/04-01-PLAN.md",
+   ".planning/phases/04-watch-recover/04-01-SUMMARY.md",
+   ".planning/phases/05-done-means-done/05-01-PLAN.md",
+   ".planning/phases/05-done-means-done/05-01-SUMMARY.md",
+   ".planning/phases/06-control-api-moshi/06-01-PLAN.md",
+   ".planning/phases/06-control-api-moshi/06-01-SUMMARY.md",
+   ".planning/phases/07-chatgpt-mcp/07-01-PLAN.md",
+   ".planning/phases/07-chatgpt-mcp/07-01-SUMMARY.md",
+   ".planning/phases/08-public-connector/08-01-PLAN.md",
+   ".planning/phases/08-public-connector/08-01-SUMMARY.md",
+   ".planning/phases/09-herdr-fabric/09-01-PLAN.md",
+   ".planning/phases/09-herdr-fabric/09-02-PLAN.md",
+   ".planning/phases/09-herdr-fabric/09-02-SUMMARY.md",
+   ".planning/phases/10-headless-worker/10-01-PLAN.md",
+   ".planning/phases/10-headless-worker/10-01-SUMMARY.md",
+   ".planning/phases/10-headless-worker/10-02-PLAN.md",
+   ".planning/phases/10-headless-worker/10-02-SUMMARY.md",
+   ".planning/phases/10-headless-worker/10-03-PLAN.md",
+   ".planning/phases/10-headless-worker/10-03-SUMMARY.md",
+   ".planning/phases/10-headless-worker/10-04-PLAN.md",
+   ".planning/phases/10-headless-worker/10-04-SUMMARY.md",
+   ".planning/phases/11-operator-exceptions/11-01-PLAN.md",
+   ".planning/phases/11-operator-exceptions/11-01-SUMMARY.md",
+   ".planning/phases/11-operator-exceptions/11-02-PLAN.md",
+   ".planning/phases/11-operator-exceptions/11-02-SUMMARY.md",
+   ".planning/phases/11-operator-exceptions/11-03-PLAN.md",
+   ".planning/phases/11-operator-exceptions/11-03-SUMMARY.md",
+   ".planning/phases/12-trajectory-loop/12-01-PLAN.md",
+   ".planning/phases/12-trajectory-loop/12-01-SUMMARY.md",
+   ".planning/phases/12-trajectory-loop/12-02-PLAN.md",
+   ".planning/phases/12-trajectory-loop/12-02-SUMMARY.md",
+   ".planning/phases/12-trajectory-loop/12-03-PLAN.md",
+   ".planning/phases/12-trajectory-loop/12-03-SUMMARY.md",
+   ".planning/phases/12-trajectory-loop/12-04-PLAN.md",
+   ".planning/phases/12-trajectory-loop/12-04-SUMMARY.md",
+   ".planning/phases/13-operator-polish/13-01-PLAN.md",
+   ".planning/phases/13-operator-polish/13-01-SUMMARY.md",
+   ".planning/phases/14-no-blockers/14-01-PLAN.md",
+   ".planning/phases/14-no-blockers/14-01-SUMMARY.md",
+   ".planning/phases/15-watcher-authority/15-01-PLAN.md",
+   ".planning/phases/15-watcher-authority/15-01-SUMMARY.md",
+   ".planning/phases/15-watcher-authority/15-02-PLAN.md",
+   ".planning/phases/15-watcher-authority/15-02-SUMMARY.md",
+   ".planning/phases/15-watcher-authority/15-03-PLAN.md",
+   ".planning/phases/15-watcher-authority/15-03-SUMMARY.md",
+   ".planning/phases/16-efficiency-watcher/16-01-PLAN.md",
+   ".planning/phases/16-efficiency-watcher/16-01-SUMMARY.md",
+   ".planning/phases/16-efficiency-watcher/16-02-PLAN.md",
+   ".planning/phases/16-efficiency-watcher/16-02-SUMMARY.md",
+   ".planning/phases/16-efficiency-watcher/16-03-PLAN.md",
+   ".planning/phases/16-efficiency-watcher/16-03-SUMMARY.md",
+   ".planning/phases/16-efficiency-watcher/16-04-PLAN.md",
+   ".planning/phases/16-efficiency-watcher/16-04-SUMMARY.md",
+   ".planning/phases/16-efficiency-watcher/16-05-PLAN.md",
+   ".planning/phases/16-efficiency-watcher/16-05-SUMMARY.md",
+   ".planning/phases/16-efficiency-watcher/16-06-PLAN.md",
+   ".planning/phases/16-efficiency-watcher/16-06-SUMMARY.md",
+   ".planning/phases/16-efficiency-watcher/16-07-PLAN.md",
+   ".planning/phases/16-efficiency-watcher/16-07-SUMMARY.md"
+  ],
+  "roadmap": {
+   "1": null,
+   "12": null,
+   "16": null,
+   "17": null,
+   "2": null,
+   "3": null,
+   "4": null,
+   "5": null,
+   "6": null,
+   "7": null,
+   "8": null
+  },
+  "state": null
+ },
+ "commits": [
+  {
+   "add": [
+    ".planning/phases/17-question-queue/17-01-PLAN.md",
+    ".planning/phases/17-question-queue/17-02-PLAN.md",
+    ".planning/phases/17-question-queue/17-03-PLAN.md",
+    ".planning/phases/17-question-queue/17-04-PLAN.md",
+    ".planning/phases/17-question-queue/17-05-PLAN.md",
+    ".planning/phases/17-question-queue/17-06-PLAN.md",
+    ".planning/phases/17-question-queue/17-07-PLAN.md"
+   ],
+   "at": 1790783599,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(17): plan"
+  },
+  {
+   "add": [],
+   "at": 1790784012,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-01): work"
+  },
+  {
+   "add": [],
+   "at": 1790784216,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-01): work"
+  },
+  {
+   "add": [],
+   "at": 1790784444,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-01): work"
+  },
+  {
+   "add": [],
+   "at": 1790784765,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-01): work"
+  },
+  {
+   "add": [
+    ".planning/phases/17-question-queue/17-01-SUMMARY.md"
+   ],
+   "at": 1790784796,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(17-01): summary"
+  },
+  {
+   "add": [],
+   "at": 1790785303,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-02): work"
+  },
+  {
+   "add": [],
+   "at": 1790785493,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-02): work"
+  },
+  {
+   "add": [],
+   "at": 1790785837,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-02): context"
+  },
+  {
+   "add": [],
+   "at": 1790786026,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-02): work"
+  },
+  {
+   "add": [
+    ".planning/phases/17-question-queue/17-02-SUMMARY.md"
+   ],
+   "at": 1790786053,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(17-02): summary"
+  },
+  {
+   "add": [],
+   "at": 1790786833,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-03): work"
+  },
+  {
+   "add": [],
+   "at": 1790787092,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-03): work"
+  },
+  {
+   "add": [],
+   "at": 1790787335,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-03): work"
+  },
+  {
+   "add": [],
+   "at": 1790787533,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-03): work"
+  },
+  {
+   "add": [
+    ".planning/phases/17-question-queue/17-03-SUMMARY.md"
+   ],
+   "at": 1790787573,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(17-03): summary"
+  },
+  {
+   "add": [],
+   "at": 1790787987,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-04): work"
+  },
+  {
+   "add": [],
+   "at": 1790788166,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-04): work"
+  },
+  {
+   "add": [],
+   "at": 1790788348,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-04): work"
+  },
+  {
+   "add": [],
+   "at": 1790788510,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-04): work"
+  },
+  {
+   "add": [
+    ".planning/phases/17-question-queue/17-04-SUMMARY.md"
+   ],
+   "at": 1790788534,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(17-04): summary"
+  },
+  {
+   "add": [],
+   "at": 1790788537,
+   "delete": [],
+   "modify": [
+    ".planning/phases/17-question-queue/17-04-SUMMARY.md"
+   ],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(17-04): summary"
+  },
+  {
+   "add": [],
+   "at": 1790788919,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-05): work"
+  },
+  {
+   "add": [],
+   "at": 1790789119,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-05): work"
+  },
+  {
+   "add": [],
+   "at": 1790789379,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-05): work"
+  },
+  {
+   "add": [],
+   "at": 1790789903,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-05): work"
+  },
+  {
+   "add": [
+    ".planning/phases/17-question-queue/17-05-SUMMARY.md"
+   ],
+   "at": 1790789924,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(17-05): summary"
+  },
+  {
+   "add": [],
+   "at": 1790790544,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-06): work"
+  },
+  {
+   "add": [],
+   "at": 1790790752,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-06): work"
+  },
+  {
+   "add": [],
+   "at": 1790791001,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-06): work"
+  },
+  {
+   "add": [
+    ".planning/phases/17-question-queue/17-06-SUMMARY.md"
+   ],
+   "at": 1790791025,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(17-06): summary"
+  },
+  {
+   "add": [],
+   "at": 1790791321,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-07): work"
+  },
+  {
+   "add": [],
+   "at": 1790791523,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-07): work"
+  },
+  {
+   "add": [],
+   "at": 1790791910,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "feat(17-07): verification"
+  },
+  {
+   "add": [
+    ".planning/phases/17-question-queue/17-07-SUMMARY.md"
+   ],
+   "at": 1790791931,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(17-07): summary"
+  },
+  {
+   "add": [],
+   "at": 1790792229,
+   "delete": [],
+   "modify": [],
+   "roadmap": null,
+   "state": null,
+   "subject": "docs(17): verification"
+  }
+ ],
+ "done": [
+  1790781556.170834,
+  1790792243.971123
+ ],
+ "goal": "Build Steward Phase 17 \"Question queue\" with GSD, end to end.",
+ "job": "ed11ba3c",
+ "sent_back": [
+  1790781685.690445
+ ],
+ "t0": 1790781370.719444,
+ "truth_min": 181.2
+}

@@ -1,0 +1,7 @@
+started agy:59639ca5-f8d4-4fb8-b8e9-7fc5fbc7e8fa model Gemini 3.8 Flash (High)
+after interrupt: [('error', 'interrupted', 'interrupted')]
+stop: True alive: False
+reattach: True
+deliver after reattach: delivered
+after deliver: [('done', {'turn_id': 't1', 'status': 'completed', 'evidence_ref': 'agy:59639ca5-f8d4-4fb8-b8e9-7fc5fbc7e8fa:t1'})]
+stop b: True

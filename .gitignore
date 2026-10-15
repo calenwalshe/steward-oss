@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+*.db
+*.db-wal
+*.db-shm
+scripts/container/herdr
+*.tgz
+.scratch/
+.perf/
+# worker scratch / evidence (incorporate preflight refuses branches that add these)
+.tmp-*/
+.evidence/
+.diag/
+.proof/
+.herdr-test-sockets/

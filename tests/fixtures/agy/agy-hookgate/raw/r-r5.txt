@@ -1,0 +1,11 @@
+$ cd /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/ws-r5-ws-overwrite && echo '{"event": "user", "message": {"role": "user", "content": "Run the shell command `echo hi` and report its output."}}' | HOME=/home/user/.cache/steward-proof/agyhomes/r5-ws-overwrite agy --input-format stream-json --output-format stream-json -p= --log-file /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/r5-ws-overwrite.log
+rc=0 elapsed=8.3s
+{"event": "step_update", "step_update": {"conversation_id": "89458ac2-7890-4398-92eb-8b51be74ef1f", "step_index": 2, "state": "ACTIVE", "step_type": "tool", "tool_name": "run_command", "tool_info": {"name": "run_command", "parameters": {"CommandLine": "echo hi"}}}}
+{"event": "step_update", "step_update": {"conversation_id": "89458ac2-7890-4398-92eb-8b51be74ef1f", "step_index": 2, "state": "ERROR", "step_type": "tool", "tool_name": "run_command", "duration_seconds": 0.093316568, "tool_info": {"name": "run_command", "parameters": {"CommandLine": "echo hi"}, "error": {"type": "TOOL_ERROR", "message": "tool call denied by pre-tool hook: steward gate: marker denied"}}}}
+{"event": "result", "result": {"conversation_id": "89458ac2-7890-4398-92eb-8b51be74ef1f", "status": "SUCCESS", "response": "The execution of the shell command `echo hi` was blocked by a pre-tool hook:\n\n```\ntool call denied by pre-tool hook: steward gate: marker denied\n```\n", "duration_seconds": 6.651714651, "num_turns": 1, "usage": {"input_tokens": 16137, "output_tokens": 1384, "thinking_tokens": 1237, "cache_read_tokens": 8132, "total_tokens": 17521}}}
+--- stderr:
+
+--- steward hook calls: ['allowbut']
+    {"args": {"CommandLine": "touch steward-marker.txt", "Cwd": "/home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/ws-r5-ws-overwrite", "WaitMsBeforeAsync": 2000, "toolAction": "Running echo command", "toolSummary": "Echo command"}, "name": "run_command"}
+--- workspace hook calls: ['out']
+--- workspace files: ['.agents/hook-calls.txt', '.agents/hook-in-542174.json', '.agents/hook.sh', '.agents/hooks.json', 'seed.txt']

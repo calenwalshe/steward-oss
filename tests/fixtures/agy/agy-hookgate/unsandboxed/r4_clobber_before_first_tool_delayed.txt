@@ -1,0 +1,7 @@
+=== r4_clobber_before_first_tool_delayed 2026-10-04T13:21:46-0700
+$ scenario r4: like t5d but clobber 0.0s after init vs. check timing; turn: touch
+  (Steward-side: gate hooks.json overwritten with {} at 13:21:48)
+  agy step 2 run_command DONE {"CommandLine": "touch steward-marker.txt"} 
+  agy result status=SUCCESS denied_actions=None response='The command `touch steward-marker.txt` succeeded (exit code `0`), successfully creating [steward-marker.txt](file:///home/user/.local/state/steward/worktrees/c'
+  done: {"turn_id": "t1", "status": "completed", "evidence_ref": "agy:dd9fc3b3-2873-49ce-b77c-fd553c9010ca:t1"}
+  marker present: True

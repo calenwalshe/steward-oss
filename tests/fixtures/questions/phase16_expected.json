@@ -1,0 +1,44 @@
+{
+  "source": "49fb32c:.planning/phases/16-efficiency-watcher/16-CONTEXT.md",
+  "cards": [
+    {"anchor": "G1", "has_options": true, "recommended": ["a"], "options": [
+      {"key": "a", "label": "fix inside this phase as plan 16-01"},
+      {"key": "b", "label": "separate quick fix first"},
+      {"key": "c", "label": "leave as is, and the watcher does its own parse"}]},
+    {"anchor": "G2", "has_options": true, "recommended": ["c"], "options": [
+      {"key": "a", "label": "cost metrics only"},
+      {"key": "b", "label": "cost + time"},
+      {"key": "c", "label": "cost + time + critical path + trends (the full list)"}]},
+    {"anchor": "G3", "has_options": true, "recommended": ["c"], "options": [
+      {"key": "a", "label": "GSD adapter (phases/plans from `.planning/`)"},
+      {"key": "b", "label": "generic only"},
+      {"key": "c", "label": "generic core + optional unit hint"}]},
+    {"anchor": "G4", "has_options": true, "recommended": ["a"], "options": [
+      {"key": "a", "label": "one supervisor-tree row + ⚠ lines for findings"},
+      {"key": "b", "label": "a dedicated efficiency block"},
+      {"key": "c", "label": "CLI only"}]},
+    {"anchor": "G5", "has_options": true, "recommended": ["a"], "options": [
+      {"key": "a", "label": "all deterministic"},
+      {"key": "b", "label": "deterministic detectors + model to phrase/choose remedies"},
+      {"key": "c", "label": "a model reviews everything"}]},
+    {"anchor": "G6", "has_options": true, "recommended": ["c"], "options": [
+      {"key": "a", "label": "observe only"},
+      {"key": "b", "label": "Phase-15 ladder T0→T2 (observe → escalate → nudge)"},
+      {"key": "c", "label": "(b) plus a bounded `reconfigure` power"}]},
+    {"anchor": "G7", "has_options": false, "recommended": [], "options": []},
+    {"anchor": "G8", "has_options": true, "recommended": ["a", "c"], "options": [
+      {"key": "a", "label": "steering nudge"},
+      {"key": "b", "label": "write into the job's config files"},
+      {"key": "c", "label": "a policy block the brief carries"}]},
+    {"anchor": "G9", "has_options": false, "recommended": [], "options": []},
+    {"anchor": "G10", "has_options": true, "recommended": ["b"], "options": [
+      {"key": "a", "label": "everything on"},
+      {"key": "b", "label": "metrics on, actuation opt-in"},
+      {"key": "c", "label": "all opt-in"}]},
+    {"anchor": "G11", "has_options": false, "recommended": [], "options": []},
+    {"anchor": "G12", "has_options": false, "recommended": [], "options": []},
+    {"anchor": "G13", "has_options": false, "recommended": [], "options": []},
+    {"anchor": "G14", "has_options": false, "recommended": [], "options": []},
+    {"anchor": "G15", "has_options": false, "recommended": [], "options": []}
+  ]
+}

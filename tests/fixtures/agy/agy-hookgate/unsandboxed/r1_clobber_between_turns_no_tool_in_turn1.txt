@@ -1,0 +1,9 @@
+=== r1_clobber_between_turns_no_tool_in_turn1 2026-10-04T13:21:46-0700
+$ scenario r1: turn 1 uses no tool; clobber; turn 2 touches
+  agy result status=SUCCESS denied_actions=None response='READY\n'
+  done: {"turn_id": "t1", "status": "completed", "evidence_ref": "agy:3714d5c0-6faa-44df-9a5c-eb57c402acbe:t1"}
+  (Steward-side: gate hooks.json overwritten with {} at 13:21:49)
+  agy step 4 run_command DONE {"CommandLine": "touch steward-marker.txt"} 
+  agy result status=SUCCESS denied_actions=None response='The command `touch steward-marker.txt` completed successfully (exit code 0).\n'
+  done: {"turn_id": "t2", "status": "completed", "evidence_ref": "agy:3714d5c0-6faa-44df-9a5c-eb57c402acbe:t2"}
+  marker present: True

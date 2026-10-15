@@ -1,0 +1,8 @@
+HOME/.gemini/antigravity-cli/hooks.json: --- HOME hook calls: ['deny'] | --- workspace files: ['seed.txt']
+HOME/.gemini/hooks.json: HOME hook calls: none | --- workspace files: ['seed.txt', 'steward-marker.txt']
+HOME/.agents/hooks.json: HOME hook calls: none | --- workspace files: ['seed.txt', 'steward-marker.txt']
+HOME/.agent/hooks.json: HOME hook calls: none | --- workspace files: ['seed.txt', 'steward-marker.txt']
+HOME/_agents/hooks.json: HOME hook calls: none | --- workspace files: ['seed.txt', 'steward-marker.txt']
+HOME/.gemini/config/plugins/p1/hooks.json: HOME hook calls: none | --- workspace files: ['seed.txt', 'steward-marker.txt']
+HOME/.gemini/antigravity/hooks.json: HOME hook calls: none | --- workspace files: ['seed.txt', 'steward-marker.txt']
+HOME/.gemini/antigravity-ide/hooks.json: HOME hook calls: none | --- workspace files: ['seed.txt', 'steward-marker.txt']

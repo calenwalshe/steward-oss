@@ -1,0 +1,11 @@
+=== r2_clobber_between_turns_after_a_tool 2026-10-04T13:21:46-0700
+$ scenario r2: turn 1 runs `ls` (approved); clobber; turn 2 touches
+  permission_request agy-1-b76402ae Bash {"command": "ls", "cwd": "/home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/proof-ws/r2"} -> answer_prompt(True) = approved
+  agy step 2 run_command DONE {"CommandLine": "ls"} 
+  agy result status=SUCCESS denied_actions=None response='The output of running `ls` is:\n\n```\nseed.txt\n```\n\nFound file: [seed.txt](file:///home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/'
+  done: {"turn_id": "t1", "status": "completed", "evidence_ref": "agy:506e6b8e-84fa-4c1d-be97-a0691777472f:t1"}
+  (Steward-side: gate hooks.json overwritten with {} at 13:21:53)
+  agy step 6 run_command DONE {"CommandLine": "touch steward-marker.txt"} 
+  agy result status=SUCCESS denied_actions=None response='The command `touch steward-marker.txt` succeeded (exit code 0).\n\nCreated file: [steward-marker.txt](file:///home/user/.local/state/steward/worktrees/c08d2346-d'
+  done: {"turn_id": "t2", "status": "completed", "evidence_ref": "agy:506e6b8e-84fa-4c1d-be97-a0691777472f:t2"}
+  marker present: True

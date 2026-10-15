@@ -1,0 +1,10 @@
+$ cd /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/ws-t-deny && echo '{"event": "user", "message": {"role": "user", "content": "Run the shell command `touch steward-marker.txt` and report whether it succeeded."}}' | HOME=/home/user/.cache/steward-proof/agyhomes/t-deny agy --input-format stream-json --output-format stream-json -p= --log-file /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/t-deny.log
+rc=0 elapsed=8.8s
+{"event": "step_update", "step_update": {"conversation_id": "587edac1-5a5b-4867-b780-8d1046f587e7", "step_index": 2, "state": "ACTIVE", "step_type": "tool", "tool_name": "run_command", "tool_info": {"name": "run_command", "parameters": {"CommandLine": "touch steward-marker.txt"}}}}
+{"event": "step_update", "step_update": {"conversation_id": "587edac1-5a5b-4867-b780-8d1046f587e7", "step_index": 2, "state": "ERROR", "step_type": "tool", "tool_name": "run_command", "duration_seconds": 0.043200384, "tool_info": {"name": "run_command", "parameters": {"CommandLine": "touch steward-marker.txt"}, "error": {"type": "TOOL_ERROR", "message": "tool call denied by pre-tool hook: steward gate: denied"}}}}
+{"event": "result", "result": {"conversation_id": "587edac1-5a5b-4867-b780-8d1046f587e7", "status": "SUCCESS", "response": "The command `touch steward-marker.txt` did **not** succeed.\n\n**Error:**\n```\ntool call denied by pre-tool hook: steward gate: denied\n```\n", "duration_seconds": 3.6099213690000003, "num_turns": 1, "usage": {"input_tokens": 24299, "output_tokens": 476, "thinking_tokens": 327, "cache_read_tokens": 0, "total_tokens": 24775}}}
+--- stderr:
+
+--- steward hook calls: ['deny']
+    {"args": {"CommandLine": "touch steward-marker.txt", "Cwd": "/home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/ws-t-deny", "WaitMsBeforeAsync": 5000, "toolAction": "Touching marker file", "toolSummary": "Touch marker file"}, "name": "run_command"}
+--- workspace files: ['seed.txt']

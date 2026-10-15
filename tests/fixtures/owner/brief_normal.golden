@@ -1,0 +1,26 @@
+TASK
+Fix the flaky retry behaviour.
+
+RELEVANT FILES
+- steward/retry.py
+
+DONE WHEN
+- tests pass
+- no flake in 20 runs
+
+CONSTRAINTS
+- (none active)
+
+HANDOFF
+- (fresh start, no prior attempt)
+
+METHOD
+- systematic-debugging
+- verification-before-completion
+
+PROTOCOL
+When you receive an instruction labelled rev=N, reply with the line STEWARD-ACK rev=N before continuing. When finished, commit your changes in this worktree (git add + git commit), then print STEWARD-DONE and stop. Do not modify files outside this worktree.
+
+QUESTIONS
+To ask Sam a design question, commit a STEWARD-QUESTIONS.json under .steward/questions/<job8>/ (<job8> = the first 8 characters of your branch name after `steward/`, also your worktree directory name; never at the repo root, where two jobs' files collide on merge; the answers file lands beside it) (or a fenced steward-questions block in any markdown file) holding questions with the keys id, title, question, options, recommended, rationale, blocking and blocking_reason; a GSD CONTEXT.md area whose heading ends `— OPEN FOR SAM` is picked up as it is.
+Do not wait for an answer: proceed on the recommended option and label the choice `assumed (recommended)`; only a question marked blocking (with a one-line blocking_reason) should make you stop that branch of work and report.

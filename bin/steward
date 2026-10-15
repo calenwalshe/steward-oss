@@ -1,0 +1,6 @@
+#!/bin/sh
+# `steward` for worker panes (RC-4, 2026-10-11): the shim pane puts this directory on PATH so a worker can run
+# `steward check run|await|wait ...` as a plain command. Runs this tree's CLI with the pane's interpreter; -P keeps
+# the caller's cwd (a job worktree, possibly of this very repo) off sys.path.
+root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd -P)
+PYTHONPATH="$root${PYTHONPATH:+:$PYTHONPATH}" exec "${STEWARD_PYTHON:-python3}" -P -m steward.cli "$@"

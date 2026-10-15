@@ -1,0 +1,10 @@
+=== t3_agy_hook_timeout 2026-10-04T13:18:52-0700
+$ scenario t3_agy_hook_timeout: AgyStreamAdapter(gate_dir=/home/user/.cache/steward-proof/home/agy-gate/proof/t3_agy_hook_timeout).start('Run the shell command `touch steward-marker.txt` in the current directory and report whether it succeeded.', /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/proof-ws/t3_agy_hook_timeout)
+  started agy:412a2f05-93ae-4c41-88f1-7062fc896e35; agy HOME=/home/user/.cache/steward-proof/home/agy-gate/proof/t3_agy_hook_timeout/home; hook name=steward-gate-f97f563a929fec0d7c433d68e963d7f8
+  agy step 2 run_command ERROR {"CommandLine": "touch steward-marker.txt"} JSON hook "jsonhook__steward-gate-f97f563a929fec0d7c433d68e963d7f8_PreToolUse_0_0" failed: command failed: signal: killed, stderr:
+  agy step 4 view_file ERROR {"AbsolutePath": "/home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688b JSON hook "jsonhook__steward-gate-f97f563a929fec0d7c433d68e963d7f8_PreToolUse_0_0" failed: command failed: signal: killed, stderr:
+  agy result status=SUCCESS denied_actions=None response='The shell command `touch steward-marker.txt` did **not** succeed. \n\nThe execution failed before running the command due to a pre-tool hook timeout:\n```\nEncounte'
+  done: {"turn_id": "t1", "status": "completed", "evidence_ref": "agy:412a2f05-93ae-4c41-88f1-7062fc896e35:t1"}
+  gate hard-denied without asking: []
+  elapsed 48.2s; workspace files: ['seed.txt']
+  marker present: False

@@ -1,0 +1,40 @@
+# Proposed tech-lead policy (Steward v2.6, PRD D-03 / SUP-11). NOT applied: install it yourself as
+# ~/.config/steward/tech-lead.toml (or $STEWARD_CONFIG_DIR/tech-lead.toml). Every value below is the default.
+#
+# This file tunes autonomy ABOVE the hard floor. The floor (no push/publish/deploy/contact, no accept/merge/
+# incorporate/release, no spend past caps, no secrets or ungranted keys, nothing outside the job's worktree or in the
+# live Steward store/services, no weakening/skipping/deleting tests) is hard-coded: no key here can open it, and a
+# key that names a floor class is rejected at load.
+
+mode = "active"              # active | shadow (shadow records what it would do and does nothing)
+
+[cadence]                    # the adaptive outer loop
+active_min = 30              # backstop snapshot cadence while the job is active or flagged (no fact = no model call)
+quiet_min = 120              # when quiet and healthy (routed facts always wake it immediately)
+
+[review]
+timeout_s = 300              # a review not done in this time falls through Astra -> Fable -> you
+token_budget = 12000         # per-review packet budget (orientation brief + facts + notebook + playbook)
+drill_down_chars = 2000      # one pulled plan section, at most
+
+[fixes]
+takeover_max_lines = 20      # a takeover diff larger than this is aborted and becomes a send-back
+fix_rounds = 2               # the same issue surviving this many send-backs -> the tech lead takes over
+judgment_confidence = 0.8    # judgment-based fixes (Jev/advisor concerns) need at least this confidence
+send_back = true
+takeover = true
+judgment_fixes = true
+
+[scopes]
+permissions = "broad"        # broad | contract | none: which worker permission asks the tech lead may clear
+grants = "broad"             # broad | contract | none: which job-granted keys it may pass on
+
+[parked]                     # jobs resting in NEEDS_HUMAN with a `stuck` hold (spec 2026-10-04)
+cadence_min = 10             # how often the tech lead reviews a stuck parked job
+reopen = true                # may it send a stuck job back itself (acceptance holds never)
+
+[ownership]                  # continuous job ownership: review before the owner is interrupted
+enabled = true                # false (or STEWARD_OWNERSHIP=0) restores legacy NEEDS_HUMAN notices
+coalesce_s = 30               # quiet period after new evidence before a review starts
+aging_min = 60                # a reviewable blocker this old jumps the queue
+max_reviews = 3                # reviews in flight per controller process (one per job)

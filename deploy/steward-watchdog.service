@@ -1,0 +1,25 @@
+# Steward watchdog (issue W): restores a dead/wedged control pane directly and dead runners through control's
+# runner_restart relay; never touches a worker. Lives outside Herdr/Steward so it survives control crashes and deploys.
+# Install ONLY with the owner's OK (a live systemd write):
+#   deploy/install-steward-watchdog.sh          # dry run: prints the plan, changes nothing
+#   deploy/install-steward-watchdog.sh --yes    # links the unit, daemon-reload, enable --now
+# Starting at boot without a login session needs lingering (`loginctl enable-linger $USER`), also the owner's call.
+# If the repo lives elsewhere, fix ExecStart (it must point at this repo's wrapper).
+# Never add EnvironmentFile=~/.api-keys (systemd drops `export` lines and logs the values to the journal in
+# plaintext). The watchdog needs no secrets: `tg` reads its own config.
+
+[Unit]
+Description=Steward watchdog (self-heal: control + runners)
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=%h/work/work-20260926-135916/deploy/run-steward-watchdog.sh
+Restart=always
+RestartSec=10
+NoNewPrivileges=yes
+UMask=0077
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

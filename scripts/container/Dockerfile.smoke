@@ -1,0 +1,18 @@
+# Clean-container smoke image (Phase 19, G20 tier 4): Node 24 + Python 3.12 + git + the host's static herdr binary.
+# Built by scripts/container_smoke.sh, which copies the host's herdr to scripts/container/herdr first (that file is
+# git-ignored and never committed). The image holds no Steward, no user data and no credentials: the package
+# tarball is mounted read-only at run time, and the container runs with no network.
+FROM node:24-slim AS node
+
+FROM python:3.12-slim
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends git procps \
+    && rm -rf /var/lib/apt/lists/*
+COPY --from=node /usr/local/bin/node /usr/local/bin/node
+COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
+RUN ln -s ../lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
+COPY herdr /usr/local/bin/herdr
+RUN chmod 0755 /usr/local/bin/herdr \
+    && useradd --create-home --uid 10001 smoke
+USER smoke
+WORKDIR /home/smoke

@@ -1,0 +1,12 @@
+# Silence watch for the Steward coordinator (spec 5.18): one-shot, fired by steward-coordinator-watch.timer; tells the
+# owner via `tg` once per outage. Install lines are in steward-coordinator.service. Never add EnvironmentFile=~/.api-keys.
+
+[Unit]
+Description=Steward coordinator silence watch
+
+[Service]
+Type=oneshot
+ExecStart=%h/work/work-20260926-135916/deploy/run-steward-coordinator.sh watch
+NoNewPrivileges=yes
+UMask=0077
+Environment=PYTHONUNBUFFERED=1

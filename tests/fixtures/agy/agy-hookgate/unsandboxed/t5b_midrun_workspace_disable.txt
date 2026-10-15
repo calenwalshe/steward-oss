@@ -1,0 +1,12 @@
+=== t5b_midrun_workspace_disable 2026-10-04T13:18:52-0700
+$ scenario t5b_midrun_workspace_disable
+  started; the live gate's hook name is steward-gate-df2d4aa9c24fb4ffe9ce003e6140aefe
+  agy result status=SUCCESS denied_actions=None response='READY\n'
+  done: {"turn_id": "t1", "status": "completed", "evidence_ref": "agy:b7962e5f-bee1-4170-9696-7b06c56668c9:t1"}
+  permission_request agy-1-e6a51377 Write {"file_path": "/home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/proof-ws/t5b_midrun_workspace_disable/.agents/h -> answer_prompt(True) = approved
+  agy step 4 write_to_file DONE {"TargetFile": "/home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc5 
+  permission_request agy-2-c5024b5d Bash {"command": "touch steward-marker.txt", "cwd": "/home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/proof-ws/t5b_m -> answer_prompt(False) = denied
+  agy step 6 run_command ERROR {"CommandLine": "touch steward-marker.txt"} tool call denied by pre-tool hook: denied by Steward
+  agy result status=SUCCESS denied_actions=None response='Here are the results of each step:\n\n- **Step 1:** Successfully created [.agents/hooks.json](file:///home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea'
+  done: {"turn_id": "t2", "status": "completed", "evidence_ref": "agy:b7962e5f-bee1-4170-9696-7b06c56668c9:t2"}
+  .agents/hooks.json written: True; marker present: False

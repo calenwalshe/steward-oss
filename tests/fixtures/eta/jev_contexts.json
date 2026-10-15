@@ -1,0 +1,159 @@
+{
+ "A": {
+  "name": "a7d292d8 at 64 min",
+  "truth": "unit 16-04 executing, 3 of 7 plans done, scope same",
+  "kind": "gsd-build",
+  "eta": {
+   "source": "units",
+   "kind": "gsd-build",
+   "units_done": 3,
+   "units_total": 7,
+   "units_exact": true,
+   "open_units": [
+    "16-04",
+    "16-05",
+    "16-06",
+    "16-07"
+   ],
+   "unit_label": "plan 16-04"
+  },
+  "last_said": "Plans 16-01 to 16-03 are done and the suite is green (1793 passed). Next is executor 16-04.",
+  "signals": {
+   "goal": "Build Steward Phase 16 'Efficiency watcher' with GSD, end to end. Its design is DECIDED in 16-CONTEXT.md",
+   "state": "RUNNING",
+   "hb": "working",
+   "idle_s": 40,
+   "act_s": 35,
+   "res_s": 41,
+   "last": "tool",
+   "turns": [
+    [
+     "said",
+     "Plans 16-01 to 16-03 are done and the suite is green (1793 passed). Next is executor 16-04."
+    ],
+    [
+     "tool",
+     "Task: Execute plan 16-04"
+    ]
+   ],
+   "perms": [],
+   "perm_stale": 0,
+   "steers": [],
+   "verdicts": []
+  },
+  "expect": {
+   "unit": "16-04",
+   "scope": "same"
+  }
+ },
+ "B": {
+  "name": "06ea6a04 at 259 min",
+  "truth": "phase 5 on its last plan (05-03), phases 1-4 verified, phase 8's plan in progress, 14 of 23 plans done",
+  "kind": "gsd-build",
+  "eta": {
+   "source": "units",
+   "kind": "gsd-build",
+   "units_done": 14,
+   "units_total": 23,
+   "units_exact": false,
+   "open_units": [
+    "05-03",
+    "06-01",
+    "06-02",
+    "06-03",
+    "07-01",
+    "07-02"
+   ],
+   "unit_label": "phase 5 plans"
+  },
+  "last_said": "Phase 5 is on its last plan; Phase 8's plan is being written in parallel.",
+  "signals": {
+   "goal": "Take the Steward Android app from the committed docs to a deployed, installable build, autonomously, using GSD.",
+   "state": "RUNNING",
+   "hb": "working",
+   "idle_s": 25,
+   "act_s": 20,
+   "res_s": 30,
+   "last": "tool",
+   "turns": [
+    [
+     "said",
+     "Phases 1-4 are verified. Phase 5 is executing and Phase 6 is being planned."
+    ],
+    [
+     "said",
+     "Phase 6 is planned (3 plans). Next is the Phase 7 plan, which is mostly the server spec document."
+    ],
+    [
+     "said",
+     "Phase 5 is on its last plan; Phase 8's plan is being written in parallel."
+    ],
+    [
+     "tool",
+     "Task: Plan phase 8"
+    ]
+   ],
+   "perms": [],
+   "perm_stale": 0,
+   "steers": [],
+   "verdicts": []
+  },
+  "expect": {
+   "unit": "05-03",
+   "position": "late"
+  }
+ },
+ "C": {
+  "name": "a79bf074 (gsd-quick) at 19 min",
+  "truth": "testing: a full build and test run is going in the background, nothing committed yet",
+  "kind": "gsd-quick",
+  "eta": {
+   "source": "peers",
+   "kind": "gsd-quick",
+   "units_done": 0,
+   "units_total": null,
+   "units_exact": false,
+   "open_units": [],
+   "unit_label": ""
+  },
+  "last_said": "Status: the full assembleDebug and unit-test run is going in the background. I'll report once it finishes.",
+  "signals": {
+   "goal": "Use gsd-quick to fix the Steward Android app so LIVE mode shows real data (models/mappers mismatch the server).",
+   "state": "RUNNING",
+   "hb": "working",
+   "idle_s": 55,
+   "act_s": 50,
+   "res_s": 70,
+   "last": "said",
+   "turns": [
+    [
+     "said",
+     "Status: one missing import left in a test I added; fixing it and rerunning the full core suite."
+    ],
+    [
+     "result",
+     "BUILD SUCCESSFUL in 1m 43s"
+    ],
+    [
+     "tool",
+     "Bash: cat > core/src/test/... (new test) && ./gradlew assembleDebug test"
+    ],
+    [
+     "result",
+     "Command did not complete within its 120s timeout and was moved to the background"
+    ],
+    [
+     "said",
+     "Status: the full assembleDebug and unit-test run is going in the background. I'll report once it finishes."
+    ]
+   ],
+   "perms": [],
+   "perm_stale": 0,
+   "steers": [],
+   "verdicts": []
+  },
+  "expect": {
+   "stage": "testing"
+  }
+ }
+}

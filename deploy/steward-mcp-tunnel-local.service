@@ -1,0 +1,19 @@
+# Loopback MCP listener for OpenAI Secure MCP Tunnel (127.0.0.1:9521, no auth,
+# fixed scopes read/steer/pause). Only OpenAI's tunnel-client on this host
+# calls it. NEVER add it to the Cloudflare tunnel ingress.
+
+[Unit]
+Description=Steward MCP loopback listener for OpenAI Secure MCP Tunnel
+
+[Service]
+Type=simple
+WorkingDirectory=%h/work/work-20260926-135916
+ExecStart=/usr/bin/env python3 -m steward.cli mcp serve-tunnel --port 9521
+Restart=always
+RestartSec=3
+NoNewPrivileges=yes
+UMask=0077
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

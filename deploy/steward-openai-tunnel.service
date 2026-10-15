@@ -1,0 +1,17 @@
+# OpenAI Secure MCP Tunnel -> 127.0.0.1:9521 (steward-mcp-tunnel-local).
+# Outbound-only; nothing listens publicly. Kill switch: systemctl --user stop steward-openai-tunnel
+
+[Unit]
+Description=OpenAI Secure MCP Tunnel for Steward
+After=steward-mcp-tunnel-local.service
+Requires=steward-mcp-tunnel-local.service
+
+[Service]
+Type=simple
+ExecStart=%h/work/work-20260926-135916/deploy/run-openai-tunnel.sh
+Restart=always
+RestartSec=5
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=default.target

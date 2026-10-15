@@ -1,0 +1,26 @@
+# Steward coordinator daemon (spec 5.18): works stuck jobs in a hold window before the owner is asked. Stop it with
+# `systemctl --user stop steward-coordinator` or by creating ~/.local/state/steward-coordinator/KILL.
+# Install ONLY with the owner's OK (a live systemd write):
+#   ln -s "$PWD/deploy/steward-coordinator.service" ~/.config/systemd/user/
+#   ln -s "$PWD/deploy/steward-coordinator-watch.service" ~/.config/systemd/user/
+#   ln -s "$PWD/deploy/steward-coordinator-watch.timer" ~/.config/systemd/user/
+#   systemctl --user daemon-reload && systemctl --user enable --now steward-coordinator.service steward-coordinator-watch.timer
+# If the repo lives elsewhere, fix ExecStart (it must point at this repo's wrapper).
+# Never add EnvironmentFile=~/.api-keys (systemd drops `export` lines and logs the values to the journal in
+# plaintext). The coordinator needs no secrets: its tools read their own config.
+
+[Unit]
+Description=Steward coordinator (works stuck jobs before the owner is asked)
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=%h/work/work-20260926-135916/deploy/run-steward-coordinator.sh run
+Restart=on-failure
+RestartSec=10
+NoNewPrivileges=yes
+UMask=0077
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

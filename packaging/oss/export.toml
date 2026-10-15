@@ -1,0 +1,34 @@
+# Public export manifest for scripts/oss_export.py (the steward-oss snapshot).
+
+[export]
+include = [
+  "steward/", "tests/", "bin/", "packaging/", "examples/", "scripts/", "deploy/",
+  "pyproject.toml", "package.json", ".gitignore", "README.md", "LICENSE",
+  "CONTRIBUTING.md", "CHANGELOG.md", "KNOWN-ISSUES.md",
+  "docs/FLOW.md", "docs/supervision.md", "docs/TRAJECTORY-DESIGN.md", "docs/DEADLINE.md",
+  "docs/OPERATOR.md", "docs/SOURCE-PRINCIPLES.md", "docs/model-selection-policy.md",
+  "docs/superpowers/specs/",
+]
+# A pattern ending in "/" excludes any directory of that name; others are fnmatch globs on the path.
+exclude = [
+  "**/__pycache__/**", ".planning/", ".steward/", ".verify/", ".gsd/", "spikes/", "mine/",
+]
+
+[markers]
+# Text files must not match any of these (after the include/exclude filter).
+patterns = [
+  'Calen',
+  'calenwalshe',
+  'cairnlabs',
+  'turing',
+  '/home/agent',
+  '100\.\d+\.\d+\.\d+',
+]
+# Any email address is a hit unless its domain is allowed, ends in a reserved/test suffix, or the local part is noreply.
+# TEST-NET addresses (RFC 5737) are documentation ranges.
+email_allow_prefixes = ["192.0.2.", "198.51.100.", "203.0.113."]
+email_allow_domains = ["example.com", "example.org", "b.c", "chatgpt.com"]
+email_allow_suffixes = [".invalid", ".test", ".example", ".example.com", ".example.org"]
+email_allow_locals = ["noreply"]
+# Files that legitimately contain the marker words themselves.
+scan_exempt = ["packaging/oss/export.toml", "tests/test_oss_export.py"]

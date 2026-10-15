@@ -1,0 +1,11 @@
+$ cd /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/ws-t5-wsallow && echo '{"event": "user", "message": {"role": "user", "content": "Run the shell command `touch steward-marker.txt` and report whether it succeeded."}}' | HOME=/home/user/.cache/steward-proof/agyhomes/t5-wsallow agy --input-format stream-json --output-format stream-json -p= --log-file /home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/t5-wsallow.log
+rc=0 elapsed=6.2s
+{"event": "step_update", "step_update": {"conversation_id": "28660f9b-bd85-4134-8783-353ebe65d328", "step_index": 2, "state": "ACTIVE", "step_type": "tool", "tool_name": "run_command", "tool_info": {"name": "run_command", "parameters": {"CommandLine": "touch steward-marker.txt"}}}}
+{"event": "step_update", "step_update": {"conversation_id": "28660f9b-bd85-4134-8783-353ebe65d328", "step_index": 2, "state": "ERROR", "step_type": "tool", "tool_name": "run_command", "duration_seconds": 0.03329321, "tool_info": {"name": "run_command", "parameters": {"CommandLine": "touch steward-marker.txt"}, "error": {"type": "TOOL_ERROR", "message": "tool call denied by pre-tool hook: steward gate: denied"}}}}
+{"event": "result", "result": {"conversation_id": "28660f9b-bd85-4134-8783-353ebe65d328", "status": "SUCCESS", "response": "The command `touch steward-marker.txt` did not succeed.\n\nExecution was blocked with the following error:\n> `tool call denied by pre-tool hook: steward gate: denied`\n", "duration_seconds": 4.581042891, "num_turns": 1, "usage": {"input_tokens": 24331, "output_tokens": 491, "thinking_tokens": 338, "cache_read_tokens": 0, "total_tokens": 24822}}}
+--- stderr:
+
+--- steward hook calls: ['deny']
+    {"args": {"CommandLine": "touch steward-marker.txt", "Cwd": "/home/user/.local/state/steward/worktrees/c08d2346-dd8d-4cea-bffc-7688bc54b783/.scratch/hookgate/ws-t5-wsallow", "WaitMsBeforeAsync": 5000, "toolAction": "Creating marker file", "toolSummary": "Touch marker file"}, "name": "run_command"}
+--- workspace hook calls: ['allow']
+--- workspace files: ['.agents/hook-calls.txt', '.agents/hook-in-390981.json', '.agents/hook.sh', '.agents/hooks.json', 'seed.txt']

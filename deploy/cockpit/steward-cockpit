@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# steward-cockpit: open (or jump back to) the `steward` Herdr workspace:
+#   left  = Claude operator seeded with docs/OPERATOR.md, ready for "Run Steward on <repo>: <goal>"
+#   right = steward-dash live panel (services, public connector, jobs)
+set -euo pipefail
+export PATH="$HOME/bin:$HOME/.local/bin:$(ls -d "$HOME"/.nvm/versions/node/*/bin 2>/dev/null | tr '\n' ':')$PATH"
+REPO="$HOME/work/work-20260926-135916"
+LABEL="steward"
+
+existing=$(herdr workspace list | python3 -c "import sys,json; print(next((w['workspace_id'] for w in json.load(sys.stdin)['result']['workspaces'] if w.get('label')=='$LABEL'),''))")
+if [ -n "$existing" ]; then
+  herdr workspace focus "$existing" >/dev/null
+  exit 0
+fi
+
+created=$(herdr workspace create --label "$LABEL" --cwd "$REPO" --focus)
+pane=$(echo "$created" | python3 -c "import json,sys; print(json.load(sys.stdin)['result']['root_pane']['pane_id'])")
+tab=$(echo "$created" | python3 -c "import json,sys; print(json.load(sys.stdin)['result']['tab']['tab_id'])")
+herdr tab rename "$tab" "cockpit" >/dev/null
+dash=$(herdr pane split --pane "$pane" --direction right --cwd "$REPO" --no-focus \
+       | python3 -c "import json,sys; print(json.load(sys.stdin)['result']['pane']['pane_id'])")
+herdr pane run "$dash" "$HOME/bin/steward-dash" >/dev/null
+ws=$(echo "$created" | python3 -c "import json,sys; print(json.load(sys.stdin)['result']['workspace']['workspace_id'])")
+(cd "$REPO" && python3 -m steward.cli up --workspace "$ws") >/dev/null
+
+mkdir -p "$HOME/.cache/steward"
+seed="$HOME/.cache/steward/cockpit-seed.txt"
+cat > "$seed" <<SEED
+You are the Steward operator in Herdr workspace '$LABEL' (your pane: $pane; the live status panel is pane $dash, and the 'steward' tab holds the control + advisor panes — leave those alone). HERDR_ENV=1; use the herdr CLI, never bare \`herdr\`. Read $REPO/docs/OPERATOR.md now, including "Workbench posture". Posture: The owner shapes work with you, then it runs, he steers, and he accepts. SHAPE: when he describes work, draft it with him — goal, the measurable finish line (counts, durations, files, behaviour), don'ts — show it in a few lines and launch only when he says go. RUN: no permission ceremony (SP-36). STEER: turn his plain words into steward steer/focus/avoid. FINISH: when a job reaches NEEDS_HUMAN, show him the finish-line evidence (verification + the actual outputs) and accept only when he says so. Then reply in ONE line: that you're ready, plus the count of active Steward jobs from \`python3 -m steward.cli status\`.
+SEED
+herdr pane run "$pane" "$HOME/bin/agent-launch claude --dangerously-skip-permissions --model opus \"\$(cat $seed)\"" >/dev/null
