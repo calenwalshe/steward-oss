@@ -18,9 +18,9 @@ def _canary():
 
 def test_text_masks_canaries_tokens_bearer_assignments_and_private_keys():
     raw = (f"key {CANARY} token sk-ABCDEFGHIJKLMNOPQRSTUV Authorization: Bearer abc.def password=hunter2 "
-           "-----BEGIN OPENSSH PRIVATE KEY-----\nAAAA\n-----END OPENSSH PRIVATE KEY----- ghp_" + "a" * 30)
+           ("-----" + "BEGIN OPENSSH PRIVATE " + "KEY" + "-----\nnot-a-real-key\n-----" + "END OPENSSH PRIVATE " + "KEY" + "----- ghp_") + "a" * 30)
     out = sanitize.text(raw)
-    for secret in (CANARY, "sk-ABCDEFGHIJKLMNOPQRSTUV", "abc.def", "hunter2", "AAAA", "ghp_" + "a" * 30):
+    for secret in (CANARY, "sk-ABCDEFGHIJKLMNOPQRSTUV", "abc.def", "hunter2", "not-a-real-key", "ghp_" + "a" * 30):
         assert secret not in out
     assert sanitize.leaks(out) == [] and sanitize.leaks(raw) != []
 

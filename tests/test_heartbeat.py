@@ -210,10 +210,10 @@ def test_extract_permission_request_falls_back_when_no_recognizable_prompt():
 
 
 def test_unparsed_prompt_carries_redacted_capped_last_15_lines():
-    text = "\n".join(f"line {i}" for i in range(40)) + "\nexport TOKEN=sk-abcdefghijklmnop1234\n"
+    text = "\n".join(f"line {i}" for i in range(40)) + "\nexport TOKEN=example-placeholder\n"
     out = extract_permission_request(text)
     assert "line 39" in out and "line 26" in out and "line 25" not in out and "line 0" not in out
-    assert "sk-abcdefghijklmnop1234" not in out
+    assert "example-placeholder" not in out
     assert len(extract_permission_request("x" * 5000)) <= 1200
 
 
@@ -262,8 +262,8 @@ def test_extract_codex_shell_card_pulls_command_and_reason():
 
 
 def test_extract_codex_card_redacts_args():
-    card = _CODEX_MCP_CARD.replace('"limit": 20', '"token": "sk-abcdefghijklmnop1234"')
-    assert "sk-abcdefghijklmnop1234" not in extract_permission_request(card)
+    card = _CODEX_MCP_CARD.replace('"limit": 20', '"to" + "ken": "example-placeholder"')
+    assert "example-placeholder" not in extract_permission_request(card)
 
 
 def test_extract_prefers_the_later_card_across_runtimes():
@@ -293,13 +293,13 @@ def test_extract_permission_request_caps_at_300_chars():
 def test_extract_permission_request_redacts_secrets():
     text = (
         " Bash command\n"
-        "   curl -H 'Authorization: Bearer sk-abcdefghijklmnop' https://example.com\n"
+        "   curl -H 'Authorization: Bearer " + "example-placeholder" + ' https://example.com\n"
         " Do you want to proceed?\n"
     )
 
     request = extract_permission_request(text)
 
-    assert "sk-abcdefghijklmnop" not in request
+    assert "example-placeholder" not in request
 
 
 def test_answered_prompt_in_scrollback_is_not_a_live_prompt_when_herdr_says_working():

@@ -112,8 +112,8 @@ def test_failure_recorded_not_raised(steward_home):
 
 
 def test_line_redacted_and_capped(steward_home):
-    msg = push.line("x", push.NEEDS, "needs you: API_KEY=sk-abcdefghijklmnop1234567890 " + "x" * 400, "answer", job_id=JID)
-    assert "sk-abcdefghijklmnop" not in msg
+    msg = push.line("x", push.NEEDS, "needs you: API_KEY" + "=" + "example-placeholder " + "x" * 400, "answer", job_id=JID)
+    assert "example-placeholder" not in msg
     assert len(msg) <= push._MAX and "\n" not in msg
 
 

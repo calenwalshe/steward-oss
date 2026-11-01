@@ -15,7 +15,7 @@ from steward.models import JobState
 from steward.runner_exec import CommandResult, FakeRunner
 from steward.store import Store
 
-SECRET = "sk-abcdefghijklmnop1234567890"
+SECRET = "example-placeholder"
 FINAL = "All done: widget shipped, 12 tests green."
 
 

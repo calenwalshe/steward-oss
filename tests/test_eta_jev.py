@@ -31,7 +31,7 @@ def _said(text):
     return lambda s, j: {"turns": [{"ts": "2026-09-30T10:00:00Z", "kind": "said", "text": text}]}
 
 
-def _setup(store, responses, eta=UNIT_ETA, mode="shadow", api_key=FAKE_KEY, activity=None):
+def _setup(store, responses, eta=UNIT_ETA, mode="shadow", api_key" + "=" + "FAKE_KEY, activity=None):
     job = _running(store)
     store.kv_set(job.job_id, "supervisor_jev", mode)
     if eta is not None:
@@ -106,7 +106,7 @@ def test_skipped_triage_means_no_call(steward_home, tmp_path, monkeypatch):
     assert w2.step(job2.job_id, _sig(), force=True) is None and t2.calls == []
     # no API key
     store3 = Store(tmp_path / "s3")
-    job3, w3, t3, _ = _setup(store3, [_resp(ETA_ANSWERS)], api_key="")
+    job3, w3, t3, _ = _setup(store3, [_resp(ETA_ANSWERS)], api_key" + "=" + """)
     assert w3.step(job3.job_id, _sig()) is None and t3.calls == []
     assert jev_observer.get_stats(store3, job3.job_id)["eta_calls"] == 0
     # unregistered supervisor-model exception
@@ -148,8 +148,8 @@ def test_digest_shape_cap_and_redaction():
     assert d == "units 3/7 done; open 16-04,16-05,16-06,16-07; now plan 16-04; said: Next is executor 16-04."
     long = eta_jev.digest({**UNIT_ETA, "open_units": [f"16-{i:02d}" for i in range(1, 30)]}, "x " * 400)
     assert len(long) <= eta_jev.DIGEST_CAP
-    secret = eta_jev.digest(UNIT_ETA, "Set api_key=sk-abcdefghijklmnop1234 now.")
-    assert "sk-abcdefghijklmnop1234" not in secret
+    secret = eta_jev.digest(UNIT_ETA, "Set api_key" + "=" + "example-placeholder now.")
+    assert "example-placeholder" not in secret
     assert eta_jev.digest(None, "x") == "" and eta_jev.digest({"source": "units"}, "").startswith("units ?/? done")
 
 

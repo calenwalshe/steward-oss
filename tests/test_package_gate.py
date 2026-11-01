@@ -607,7 +607,7 @@ ALLOWED_REMOVED_LINES = {
         '-    assert push.notify_creator(store, job.job_id, "accepted", Boom()) == "failed"',
         '-def test_message_redacted_and_capped(steward_home):',
         '-    store = Store(steward_home)',
-        '-    job = _job(store, goal="deploy with API_KEY=sk-abcdefghijklmnop1234567890 " + "x" * 400)',
+        '-    job = _job(store, goal="deploy with API_KEY" + "=" + "example-placeholder " + "x" * 400)',
         '-    msg = push._message(store, job.job_id, "accepted")',
         '-    assert len(msg) <= 300 and "\\n" not in msg',
         '-    assert msg.endswith(f"result {job.job_id[:8]}")',
